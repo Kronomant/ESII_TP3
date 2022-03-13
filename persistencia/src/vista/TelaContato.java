@@ -6,8 +6,8 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 
-import controle.ContatoCT;
-import modelo.Contato;
+import controle.ProdutoCT;
+import modelo.Produto;
 
 
 import java.awt.event.WindowAdapter;
