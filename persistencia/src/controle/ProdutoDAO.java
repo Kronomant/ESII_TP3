@@ -13,22 +13,23 @@ import java.util.ArrayList;
 import java.util.List;
  
 import persistencia.Persistencia;
-import modelo.Contato;
+import modelo.Produto;
 
 import static persistencia.Persistencia.*;
 
-public class ContatoDAO {
+public class ProdutoDAO {
  
-public void insert(Contato contato){
+public void insert(Produto produto){
  
  /*
  * Isso é uma sql comum, os ? são os parâmetros que nós vamos adicionar
  * na base de dados
  */
- String sql = "INSERT INTO CONTATOS_110068(endereco, nome, telefone) VALUES('"+
-               contato.getEndereco()+"','"+
-               contato.getNome()+"','"+
-               contato.getTelefone()+"')";
+ String sql = "INSERT INTO PRODUTOS (nome, quantidade_produzida, preco, animal) VALUES('"+
+               produto.getNome()+"','"+
+               produto.getQuantidade_produzida()+"','"+
+               produto.getPreco()+"','"+
+               produto.getAnimal()+"')";
  
  Connection conn = null;
  PreparedStatement pstm = null;
@@ -73,7 +74,7 @@ public void insert(Contato contato){
  
  public void delete(int id){
 
- String sql = "DELETE FROM CONTATOS_110068 WHERE codigo = ?";
+ String sql = "DELETE FROM PRODUTO WHERE codigo = ?";
  
  Connection conn = null;
  PreparedStatement pstm = null;
@@ -109,9 +110,9 @@ public void insert(Contato contato){
  }
  }
  
- public void update(Contato contato){
+ public void update(Produto produto){
  
- String sql = "UPDATE CONTATOS_110068 SET nome = ?, telefone = ?, endereco = ?" +
+ String sql = "UPDATE PRODUTO SET nome = ?, quantidade_produzida = ?, preco = ?, animal = ?" +
  " WHERE codigo = ?";
  
  Connection conn = null;
@@ -125,15 +126,16 @@ public void insert(Contato contato){
  pstm = conn.prepareStatement(sql);
  
  
-//Adiciona o valor do primeiro parâmetro da sql
-pstm.setInt(4, contato.getId());
- 
-pstm.setString(1, contato.getNome());
+ //Adiciona o valor do primeiro parâmetro da sql
+ pstm.setString(1, produto.getNome());
  //Adicionar o valor do segundo parâmetro da sql
- pstm.setString(2, contato.getTelefone());
+ pstm.setInt(2, produto.getQuantidade_produzida());
  //Adiciona o valor do terceiro parâmetro da sql
- pstm.setString(3, contato.getEndereco());
- 
+ pstm.setFloat(3, produto.getPreco());
+ // Adiciona o valor para o quarto parâmentro da sql
+ pstm.setString(4, produto.getAnimal());
+ //Adicionar o valor para o quianto parâmetro da sql
+ pstm.setInt(5, produto.getId());
  
  //Executa a sql para inserção dos dados
  pstm.execute();
@@ -162,11 +164,11 @@ pstm.setString(1, contato.getNome());
  }
  }
  
- public List<Contato> getContatos(){
+ public List<Produto> getProdutos(){
  
- String sql = "SELECT * FROM CONTATOS_110068";
+ String sql = "SELECT * FROM PRODUTO";
  
- List<Contato> contatos = new ArrayList<Contato>();
+ List<Produto> produtos = new ArrayList<Produto>();
  
  Connection conn = null;
  PreparedStatement pstm = null;
@@ -183,22 +185,24 @@ pstm.setString(1, contato.getNome());
  //Enquanto existir dados no banco de dados, faça
  while(rset.next()){
  
- Contato contato = new Contato();
+ Produto produto = new Produto();
  
  //Recupera o id do banco e atribui ele ao objeto
- contato.setId(rset.getInt("codigo"));
+ produto.setId(rset.getInt("id"));
  
  //Recupera o nome do banco e atribui ele ao objeto
- contato.setNome(rset.getString("nome"));
+ produto.setNome(rset.getString("nome"));
  
  //Recupera a do banco e atribui ele ao objeto
- contato.setTelefone(rset.getString("telefone"));
+ produto.setQuantidade_produzida(rset.getInt("quantidade_produzida"));
  
  //Recupera a data do banco e atribui ela ao objeto
- contato.setEndereco(rset.getString("endereco"));
+ produto.setPreco(rset.getFloat("preco"));
  
+ produto.setAnimal(rset.getString("animal"));
+
  //Adiciono o contato recuperado, a lista de contatos
- contatos.add(contato);
+ produtos.add(produto);
  }
  } catch (Exception e) {
  
@@ -227,13 +231,13 @@ pstm.setString(1, contato.getNome());
  }
  }
  
- return contatos;
+ return produtos;
  }
 
 
- public Contato select(String nomebusca){
-  Contato contato = new Contato();
-  String sql = "SELECT * FROM CONTATOS_110068 WHERE NOME = '"+nomebusca.trim()+"'";
+ public Produto select(String nomebusca){
+  Produto produto = new Produto();
+  String sql = "SELECT * FROM PRODUTO WHERE NOME = '"+nomebusca.trim()+"'";
 
 
   Connection conn = null;
@@ -254,16 +258,18 @@ pstm.setString(1, contato.getNome());
 
 
     //Recupera o id do banco e atribui ele ao objeto
-    contato.setId(rset.getInt("codigo"));
+    produto.setId(rset.getInt("codigo"));
 
     //Recupera o nome do banco e atribui ele ao objeto
-    contato.setNome(rset.getString("nome"));
+    produto.setNome(rset.getString("nome"));
 
     //Recupera a do banco e atribui ele ao objeto
-    contato.setTelefone(rset.getString("telefone"));
-
+    produto.setQuantidade_produzida(rset.getInt("quantidade_produzida"));
+ 
     //Recupera a data do banco e atribui ela ao objeto
-    contato.setEndereco(rset.getString("endereco"));
+    produto.setPreco(rset.getFloat("preco"));
+ 
+    produto.setAnimal(rset.getString("animal"));
 
    }
   } catch (Exception e) {
@@ -293,7 +299,7 @@ pstm.setString(1, contato.getNome());
    }
   }
 
-  return contato;
+  return produto;
 
  }
 
