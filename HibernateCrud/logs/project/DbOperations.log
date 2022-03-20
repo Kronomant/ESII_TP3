@@ -1,0 +1,1142 @@
+2017-08-22 21:58:30 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2017-08-22 21:58:30 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2017-08-22 21:58:32 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2017-08-22 21:58:32 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2017-08-22 21:58:32 INFO  AppMain:21 - Student Details?= Id: 1, Name: Editor 101, Roll No.: 101, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:21 - Student Details?= Id: 2, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:21 - Student Details?= Id: 3, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:21 - Student Details?= Id: 4, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:21 - Student Details?= Id: 5, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2017-08-22 21:58:32 INFO  DbOperations:111 - 
+Student With Id?= 1 Is Successfully Updated In The Database!
+
+2017-08-22 21:58:32 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2017-08-22 21:58:32 INFO  AppMain:32 - Student Details?= Id: 1, Name: Java Code Geek, Roll No.: 101, Course: Masters Of Technology
+2017-08-22 21:58:32 INFO  AppMain:32 - Student Details?= Id: 2, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:32 - Student Details?= Id: 3, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:32 - Student Details?= Id: 4, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:32 - Student Details?= Id: 5, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2017-08-22 21:58:32 INFO  DbOperations:139 - 
+Student With Id?= 5 Is Successfully Deleted From The Database!
+
+2017-08-22 21:58:32 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2017-08-22 21:58:32 INFO  AppMain:42 - Student Details?= Id: 1, Name: Java Code Geek, Roll No.: 101, Course: Masters Of Technology
+2017-08-22 21:58:32 INFO  AppMain:42 - Student Details?= Id: 2, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:42 - Student Details?= Id: 3, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:42 - Student Details?= Id: 4, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2017-08-22 21:58:32 INFO  AppMain:45 - 
+=======DELETE ALL RECORDS=======
+
+2017-08-22 21:58:33 INFO  DbOperations:187 - 
+Successfully Deleted All Records From The Database Table!
+
+2017-08-22 21:58:33 INFO  AppMain:47 - 
+=======READ RECORDS AFTER ALL RECORDS DELETION=======
+2017-08-22 21:58:33 INFO  AppMain:50 - 
+No Records Are Present In The Database Table!
+
+2022-03-12 19:02:01 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-12 19:02:01 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-12 19:02:04 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-12 19:02:04 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-12 19:02:05 INFO  AppMain:21 - Student Details?= Id: 1, Name: Editor 101, Roll No.: 101, Course: Bachelor Of Technology
+2022-03-12 19:02:05 INFO  AppMain:21 - Student Details?= Id: 2, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2022-03-12 19:02:05 INFO  AppMain:21 - Student Details?= Id: 3, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2022-03-12 19:02:05 INFO  AppMain:21 - Student Details?= Id: 4, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2022-03-12 19:02:05 INFO  AppMain:21 - Student Details?= Id: 5, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2022-03-12 19:02:05 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-12 19:02:05 INFO  DbOperations:111 - 
+Student With Id?= 1 Is Successfully Updated In The Database!
+
+2022-03-12 19:02:05 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-12 19:02:06 INFO  AppMain:32 - Student Details?= Id: 1, Name: Java Code Geek, Roll No.: 101, Course: Masters Of Technology
+2022-03-12 19:02:06 INFO  AppMain:32 - Student Details?= Id: 2, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2022-03-12 19:02:06 INFO  AppMain:32 - Student Details?= Id: 3, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2022-03-12 19:02:06 INFO  AppMain:32 - Student Details?= Id: 4, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2022-03-12 19:02:06 INFO  AppMain:32 - Student Details?= Id: 5, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2022-03-12 19:02:06 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-12 19:02:07 INFO  DbOperations:138 - 
+Student With Id?= 5 Is Successfully Deleted From The Database!
+
+2022-03-12 19:02:07 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-12 19:02:07 INFO  AppMain:42 - Student Details?= Id: 1, Name: Java Code Geek, Roll No.: 101, Course: Masters Of Technology
+2022-03-12 19:02:07 INFO  AppMain:42 - Student Details?= Id: 2, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2022-03-12 19:02:07 INFO  AppMain:42 - Student Details?= Id: 3, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2022-03-12 19:02:07 INFO  AppMain:42 - Student Details?= Id: 4, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2022-03-13 16:55:57 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-13 16:55:57 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-13 16:56:01 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-13 16:56:01 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-13 16:56:02 INFO  AppMain:21 - Student Details?= Id: 6, Name: Editor 101, Roll No.: 101, Course: Bachelor Of Technology
+2022-03-13 16:56:02 INFO  AppMain:21 - Student Details?= Id: 7, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2022-03-13 16:56:02 INFO  AppMain:21 - Student Details?= Id: 8, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2022-03-13 16:56:02 INFO  AppMain:21 - Student Details?= Id: 9, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2022-03-13 16:56:02 INFO  AppMain:21 - Student Details?= Id: 10, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2022-03-13 16:56:02 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-13 16:56:02 INFO  DbOperations:114 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 16:56:02 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-13 16:56:03 INFO  AppMain:32 - Student Details?= Id: 6, Name: Editor 101, Roll No.: 101, Course: Bachelor Of Technology
+2022-03-13 16:56:03 INFO  AppMain:32 - Student Details?= Id: 7, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2022-03-13 16:56:03 INFO  AppMain:32 - Student Details?= Id: 8, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2022-03-13 16:56:03 INFO  AppMain:32 - Student Details?= Id: 9, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2022-03-13 16:56:03 INFO  AppMain:32 - Student Details?= Id: 10, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2022-03-13 16:56:03 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-13 16:56:03 INFO  DbOperations:141 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 16:56:03 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-13 16:56:04 INFO  AppMain:42 - Student Details?= Id: 6, Name: Editor 101, Roll No.: 101, Course: Bachelor Of Technology
+2022-03-13 16:56:04 INFO  AppMain:42 - Student Details?= Id: 7, Name: Editor 102, Roll No.: 102, Course: Bachelor Of Technology
+2022-03-13 16:56:04 INFO  AppMain:42 - Student Details?= Id: 8, Name: Editor 103, Roll No.: 103, Course: Bachelor Of Technology
+2022-03-13 16:56:04 INFO  AppMain:42 - Student Details?= Id: 9, Name: Editor 104, Roll No.: 104, Course: Bachelor Of Technology
+2022-03-13 16:56:04 INFO  AppMain:42 - Student Details?= Id: 10, Name: Editor 105, Roll No.: 105, Course: Bachelor Of Technology
+2022-03-13 17:30:06 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-13 17:30:06 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-13 17:30:09 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-13 17:30:09 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-13 17:30:09 INFO  DbOperations:84 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:30:09 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-13 17:30:10 INFO  DbOperations:111 - 
+Contato With Id?= 1 Is Successfully Updated In The Database!
+
+2022-03-13 17:30:10 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-13 17:30:10 INFO  DbOperations:84 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:30:10 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-13 17:30:11 INFO  DbOperations:138 - 
+Contato With Id?= 5 Is Successfully Deleted From The Database!
+
+2022-03-13 17:30:11 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-13 17:30:11 INFO  DbOperations:84 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:37:11 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-13 17:37:11 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-13 17:37:14 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-13 17:37:14 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-13 17:37:14 INFO  DbOperations:84 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:37:14 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-13 17:37:15 INFO  DbOperations:111 - 
+Contato With Id?= 1 Is Successfully Updated In The Database!
+
+2022-03-13 17:37:15 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-13 17:37:15 INFO  DbOperations:84 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:37:15 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-13 17:37:16 INFO  DbOperations:141 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:37:16 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-13 17:37:16 INFO  DbOperations:84 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:39:26 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-13 17:39:26 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-13 17:39:29 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-13 17:39:29 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 2, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 3, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 4, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 6, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 7, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 8, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 9, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 10, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 11, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 12, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 13, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 14, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:21 - Contato Details?= Id: 15, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:29 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-13 17:39:29 INFO  DbOperations:111 - 
+Contato With Id?= 1 Is Successfully Updated In The Database!
+
+2022-03-13 17:39:29 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 2, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 3, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 4, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 6, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 7, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 8, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 9, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 10, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 11, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 12, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 13, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 14, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:32 - Contato Details?= Id: 15, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-13 17:39:30 INFO  DbOperations:141 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:39:30 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 2, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 3, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 4, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 6, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 7, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 8, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 9, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 10, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 11, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 12, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 13, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 14, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:39:30 INFO  AppMain:42 - Contato Details?= Id: 15, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:41:58 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-13 17:41:58 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-13 17:42:01 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-13 17:42:01 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 2, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 3, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 4, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 6, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 7, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 8, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 9, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 10, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 11, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 12, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 13, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 14, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 15, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 16, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 17, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 18, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 19, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:21 - Contato Details?= Id: 20, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-13 17:42:02 INFO  DbOperations:111 - 
+Contato With Id?= 1 Is Successfully Updated In The Database!
+
+2022-03-13 17:42:02 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 2, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 3, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 4, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 6, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 7, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 8, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 9, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 10, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 11, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 12, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 13, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 14, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 15, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 16, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 17, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 18, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 19, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:32 - Contato Details?= Id: 20, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:02 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-13 17:42:03 INFO  DbOperations:141 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-13 17:42:03 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 2, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 3, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 4, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 6, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 7, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 8, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 9, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 10, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 11, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 12, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 13, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 14, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 15, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 16, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 17, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 18, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 19, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-13 17:42:03 INFO  AppMain:42 - Contato Details?= Id: 20, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:38 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:15:38 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:15:44 INFO  DbOperations:57 - 
+Successfully Created '5' Records In The Database!
+
+2022-03-19 20:15:44 INFO  AppMain:17 - 
+=======READ RECORDS=======
+
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 3, Nome: Java 3, REndereco: RUA JJJ, No. 3, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 4, Nome: Java 4, REndereco: RUA JJJ, No. 4, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 6, Nome: Java 6, REndereco: RUA JJJ, No. 6, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 7, Nome: Java 7, REndereco: RUA JJJ, No. 7, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 8, Nome: Java 8, REndereco: RUA JJJ, No. 8, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 9, Nome: Java 9, REndereco: RUA JJJ, No. 9, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 10, Nome: Java 10, REndereco: RUA JJJ, No. 10, Telefone: (31)9999-2233
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 71, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 72, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 73, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 74, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 75, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 76, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 77, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 78, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 79, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 80, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 81, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 82, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 83, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 84, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 85, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 86, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 87, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 88, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 89, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 90, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 91, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 92, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 93, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 94, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 95, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 96, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 97, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 98, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 99, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 100, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 101, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 102, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 103, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 104, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 105, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 106, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 107, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 108, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 109, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 110, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 111, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 112, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 113, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 114, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 115, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 116, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 117, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 118, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 119, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 120, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 121, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 122, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 123, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 124, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 125, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 126, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 127, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 128, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 129, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 130, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 131, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 132, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 133, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 134, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 135, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 136, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 137, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 138, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 139, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 140, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 141, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 142, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 143, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 144, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 145, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 146, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 147, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 148, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 149, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 150, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 151, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 152, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 153, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 154, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 155, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 156, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 157, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 158, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 159, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 160, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 161, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 162, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 163, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 164, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 165, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 166, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 167, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 168, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 169, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 170, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 171, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:45 INFO  AppMain:21 - Contato Details?= Id: 172, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 173, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 174, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 175, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 176, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 177, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 178, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 179, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 180, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 181, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 182, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 183, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 184, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 185, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 186, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 187, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 188, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 189, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 190, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 191, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 192, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 193, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 194, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 195, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 196, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 197, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 198, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 199, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 200, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 201, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 202, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 203, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 204, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 205, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 206, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 207, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 208, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 209, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 210, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 211, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 212, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 213, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 214, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 215, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 216, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 217, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 218, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 219, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 220, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 221, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 222, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 223, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 224, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 225, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 226, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 227, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 228, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 229, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 230, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 231, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 232, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 233, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 234, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 235, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 236, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 237, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 238, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 239, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 240, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 241, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 242, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 243, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 244, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 245, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 246, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 247, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 248, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 249, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 250, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 251, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 252, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 253, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 254, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 255, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 256, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 257, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 258, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 259, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 260, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 261, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 262, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 263, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 264, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:21 - Contato Details?= Id: 265, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:46 INFO  AppMain:25 - 
+=======UPDATE RECORDS=======
+
+2022-03-19 20:15:47 INFO  DbOperations:111 - 
+Contato With Id?= 1 Is Successfully Updated In The Database!
+
+2022-03-19 20:15:47 INFO  AppMain:28 - 
+=======READ RECORDS AFTER UPDATION=======
+
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 3, Nome: Java 3, REndereco: RUA JJJ, No. 3, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 4, Nome: Java 4, REndereco: RUA JJJ, No. 4, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 6, Nome: Java 6, REndereco: RUA JJJ, No. 6, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 7, Nome: Java 7, REndereco: RUA JJJ, No. 7, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 8, Nome: Java 8, REndereco: RUA JJJ, No. 8, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 9, Nome: Java 9, REndereco: RUA JJJ, No. 9, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 10, Nome: Java 10, REndereco: RUA JJJ, No. 10, Telefone: (31)9999-2233
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 71, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 72, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 73, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 74, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 75, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 76, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 77, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 78, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 79, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 80, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 81, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 82, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 83, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 84, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 85, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 86, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 87, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 88, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 89, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 90, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 91, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 92, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 93, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 94, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 95, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 96, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 97, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 98, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 99, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 100, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 101, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 102, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 103, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 104, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 105, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 106, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 107, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 108, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 109, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 110, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 111, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 112, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 113, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 114, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 115, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 116, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 117, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 118, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 119, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 120, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 121, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 122, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 123, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 124, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 125, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 126, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 127, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 128, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 129, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 130, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 131, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 132, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 133, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 134, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 135, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 136, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 137, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 138, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 139, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 140, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 141, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 142, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 143, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 144, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 145, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 146, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 147, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 148, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 149, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 150, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 151, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 152, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 153, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 154, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 155, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 156, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 157, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 158, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 159, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 160, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 161, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 162, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 163, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 164, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 165, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 166, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 167, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 168, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 169, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 170, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 171, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 172, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 173, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 174, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 175, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 176, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 177, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 178, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 179, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 180, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 181, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 182, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 183, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 184, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 185, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 186, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 187, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 188, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 189, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 190, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 191, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 192, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 193, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 194, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 195, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 196, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 197, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 198, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 199, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 200, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 201, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 202, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 203, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 204, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 205, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 206, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 207, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 208, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 209, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 210, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 211, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 212, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 213, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 214, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 215, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 216, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 217, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 218, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 219, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 220, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 221, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 222, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 223, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 224, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 225, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 226, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 227, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 228, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 229, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 230, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 231, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 232, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 233, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 234, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 235, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 236, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 237, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 238, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 239, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 240, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 241, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 242, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 243, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 244, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 245, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 246, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 247, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 248, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 249, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 250, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 251, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 252, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 253, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 254, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 255, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 256, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 257, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 258, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 259, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 260, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 261, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 262, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 263, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 264, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:32 - Contato Details?= Id: 265, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:48 INFO  AppMain:36 - 
+=======DELETE RECORD=======
+
+2022-03-19 20:15:51 INFO  DbOperations:141 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-19 20:15:51 INFO  AppMain:39 - 
+=======READ RECORDS AFTER DELETION=======
+
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 1, Nome: Jose, REndereco: AV AAA, 777, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 3, Nome: Java 3, REndereco: RUA JJJ, No. 3, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 4, Nome: Java 4, REndereco: RUA JJJ, No. 4, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 6, Nome: Java 6, REndereco: RUA JJJ, No. 6, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 7, Nome: Java 7, REndereco: RUA JJJ, No. 7, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 8, Nome: Java 8, REndereco: RUA JJJ, No. 8, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 9, Nome: Java 9, REndereco: RUA JJJ, No. 9, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 10, Nome: Java 10, REndereco: RUA JJJ, No. 10, Telefone: (31)9999-2233
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 71, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 72, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 73, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 74, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 75, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 76, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 77, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 78, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 79, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 80, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 81, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 82, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 83, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 84, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 85, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 86, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 87, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 88, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 89, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 90, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 91, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 92, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 93, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 94, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 95, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 96, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 97, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 98, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 99, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 100, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 101, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 102, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 103, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 104, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 105, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 106, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 107, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 108, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 109, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 110, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 111, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 112, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 113, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 114, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 115, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 116, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 117, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 118, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 119, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 120, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 121, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 122, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 123, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 124, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 125, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 126, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 127, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 128, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 129, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 130, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 131, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 132, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 133, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 134, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 135, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 136, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 137, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 138, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 139, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 140, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 141, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 142, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 143, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 144, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 145, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 146, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 147, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 148, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 149, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 150, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 151, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 152, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 153, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 154, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 155, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 156, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 157, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 158, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 159, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 160, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 161, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 162, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 163, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 164, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 165, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 166, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 167, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 168, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 169, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 170, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 171, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 172, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 173, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 174, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 175, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 176, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 177, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 178, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 179, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 180, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 181, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 182, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 183, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 184, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 185, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 186, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 187, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 188, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 189, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 190, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 191, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 192, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 193, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 194, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 195, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 196, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 197, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 198, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 199, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 200, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 201, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 202, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 203, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 204, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 205, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 206, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 207, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 208, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 209, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 210, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 211, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 212, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 213, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 214, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 215, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 216, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 217, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 218, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 219, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 220, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 221, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 222, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 223, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 224, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 225, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 226, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 227, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 228, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 229, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 230, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 231, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 232, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 233, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 234, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 235, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 236, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 237, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 238, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 239, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 240, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 241, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 242, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 243, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 244, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 245, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 246, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 247, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 248, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 249, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 250, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 251, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 252, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 253, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 254, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 255, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 256, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 257, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 258, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 259, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 260, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 261, Nome: aluno 101, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 262, Nome: aluno 102, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 263, Nome: aluno 103, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 264, Nome: aluno 104, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:15:53 INFO  AppMain:42 - Contato Details?= Id: 265, Nome: aluno 105, REndereco: RUA XXXXX, 999, Telefone: (31)9999-8877
+2022-03-19 20:22:40 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:22:40 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:22:52 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:22:52 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:26:33 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:26:33 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:29:01 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:29:01 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:31:27 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:31:27 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:31:47 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:31:47 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:31:59 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:31:59 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:32:27 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:32:27 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:32:45 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:32:45 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:34:10 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:34:10 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:34:33 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:34:33 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:36:14 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:36:14 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:38:56 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:38:56 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:39:55 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:39:55 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:40:05 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:40:05 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:41:17 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:41:17 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:41:59 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:41:59 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:42:28 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:42:28 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:42:58 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:42:58 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:43:31 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:43:31 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:47:15 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:47:15 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:47:37 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:47:37 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 20:48:14 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 20:48:14 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 21:13:40 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 21:13:40 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 21:18:11 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 21:18:11 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
+2022-03-19 21:43:44 INFO  AppMain:12 - .......Hibernate Crud Operations Example.......
+
+2022-03-19 21:43:44 INFO  AppMain:14 - 
+=======CREATE RECORDS=======
+
