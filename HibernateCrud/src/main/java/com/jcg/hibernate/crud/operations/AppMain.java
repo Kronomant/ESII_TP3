@@ -4,7 +4,7 @@ public class AppMain {
 
     public static void main(String args[]) {
 
-        TelaAlimento TC = new TelaAlimento();
+        TelaProduto TC = new TelaProduto();
         TC.setVisible(true);
 
     }

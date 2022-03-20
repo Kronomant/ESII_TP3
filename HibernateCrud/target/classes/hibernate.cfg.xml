@@ -16,6 +16,6 @@
 <!--  Specifying Session Context  -->
 <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
 <!--  Mapping With Model Class Containing Annotations  -->
-<mapping class="com.jcg.hibernate.crud.operations.Alimento704593e706002"/>
+<mapping class="com.jcg.hibernate.crud.operations.Produto"/>
 </session-factory>
 </hibernate-configuration>

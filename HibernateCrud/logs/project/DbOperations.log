@@ -1155,3 +1155,165 @@ Alimento With Id?= 4 Is Successfully Updated In The Database!
 2022-03-20 15:38:39 INFO  DbOperationsAlimento:44 - 
 Successfully Created Records In The Database!
 
+2022-03-20 17:47:20 INFO  DbOperationsProduto:34 - 
+
+.......Função de adicionar registro.......
+
+2022-03-20 17:47:20 INFO  DbOperationsProduto:51 - 
+Successfully Created '
+2022-03-20 17:48:07 INFO  DbOperationsProduto:105 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 17:49:47 INFO  DbOperationsProduto:105 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:24:42 INFO  DbOperationsProduto:105 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:30:30 INFO  DbOperationsProduto:105 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:35:58 INFO  DbOperationsProduto:90 - 
+.......Batata.......
+
+2022-03-20 19:35:59 INFO  DbOperationsProduto:94 - 
+.......Batata.......
+
+2022-03-20 19:35:59 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:37:48 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:37:48 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+
+2022-03-20 19:37:48 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:40:37 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:40:37 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+
+2022-03-20 19:40:37 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:42:01 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:42:01 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leite
+2022-03-20 19:42:01 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:43:11 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:43:11 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leite
+2022-03-20 19:43:11 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:43:49 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:43:49 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leite
+2022-03-20 19:43:49 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:46:04 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:46:04 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leite
+2022-03-20 19:46:04 INFO  DbOperationsProduto:106 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 19:54:38 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 19:54:39 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leite
+2022-03-20 19:54:39 INFO  DbOperationsProduto:96 - 
+.......Batata2.......
+
+2022-03-20 19:54:39 INFO  DbOperationsProduto:101 - 
+.......Batata2.......
+
+2022-03-20 19:54:39 INFO  DbOperationsProduto:107 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:01:44 INFO  DbOperationsProduto:129 - 
+Produto With Nome?= leite Is Successfully Deleted From The Database!
+
+2022-03-20 20:02:10 INFO  DbOperationsProduto:34 - 
+
+.......Função de adicionar registro.......
+
+2022-03-20 20:02:10 INFO  DbOperationsProduto:51 - 
+Successfully Created '
+2022-03-20 20:02:52 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 20:02:52 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leita
+2022-03-20 20:02:52 INFO  DbOperationsProduto:101 - 
+.......Batata3.......
+
+2022-03-20 20:02:52 INFO  DbOperationsProduto:108 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:05:34 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 20:05:35 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leita
+2022-03-20 20:05:35 INFO  DbOperationsProduto:101 - 
+.......Batata3.......
+
+2022-03-20 20:05:35 INFO  DbOperationsProduto:104 - 
+Produto With nome?= leita Is Successfully Updated In The Database!
+
+2022-03-20 20:07:47 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 20:07:47 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leita
+2022-03-20 20:07:47 INFO  DbOperationsProduto:101 - 
+.......Batata3.......
+
+2022-03-20 20:07:47 INFO  DbOperationsProduto:104 - 
+Produto With nome?= leita Is Successfully Updated In The Database!
+
+2022-03-20 20:07:55 INFO  DbOperationsProduto:154 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:08:05 INFO  DbOperationsProduto:154 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:08:16 INFO  DbOperationsProduto:154 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:09:55 INFO  DbOperationsProduto:90 - 
+.......Batata0.......
+
+2022-03-20 20:09:55 INFO  DbOperationsProduto:94 - 
+.......Batata1.......
+leita
+2022-03-20 20:09:55 INFO  DbOperationsProduto:101 - 
+.......Batata3.......
+
+2022-03-20 20:09:55 INFO  DbOperationsProduto:108 - 
+.......Transaction Is Being Rolled Back.......
+
