@@ -35,7 +35,7 @@ public class DbOperationsAlimento {
 
 	// Method 1: This Method Used To Create A New Student Record In The Database
 	// Table
-	public static void createRecord() {
+	public static void createRecord(String nomeDigitado, String precoDigitado) {
 		int count = 0;
 		Alimento alimentoObj = new Alimento();
 		try {
@@ -43,15 +43,11 @@ public class DbOperationsAlimento {
 			sessionObj = buildSessionFactory().openSession();
 			// Getting Transaction Object From Session Object
 			sessionObj.beginTransaction();
-			System.out.println("1");
-			// Creating Transaction Entities
-			for (int j = 0; j <= 5; j++) {
-				count = count + 1;
-				alimentoObj = new Alimento();
-				alimentoObj.setPreco(9);
-				alimentoObj.setNome("alimento " + j);
-				sessionObj.save(alimentoObj);
-			}
+
+			alimentoObj = new Alimento();
+			alimentoObj.setPreco(Float.parseFloat(precoDigitado));
+			alimentoObj.setNome(nomeDigitado);
+			sessionObj.save(alimentoObj);
 
 			// Committing The Transactions To The Database
 			sessionObj.getTransaction().commit();
@@ -79,7 +75,7 @@ public class DbOperationsAlimento {
 			// Getting Transaction Object From Session Object
 			sessionObj.beginTransaction();
 
-			alimentosList = sessionObj.createQuery("FROM Alimento_704593_706002").list();
+			alimentosList = sessionObj.createQuery("FROM Alimento").list();
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -95,7 +91,7 @@ public class DbOperationsAlimento {
 	}
 
 	// Method 3: This Method Is Used To Update A Record In The Database Table
-	public static void updateRecord(int id) {
+	public static void updateRecord(int id, String novoNome, String novoPreco) {
 		try {
 			// Getting Session Object From SessionFactory
 			sessionObj = buildSessionFactory().openSession();
@@ -103,8 +99,9 @@ public class DbOperationsAlimento {
 			sessionObj.beginTransaction();
 
 			// Creating Transaction Entity
-			Alimento contatObj = (Alimento) sessionObj.get(Alimento.class, id);
-			contatObj.setNome("manteiga");
+			Alimento alimentoObj = (Alimento) sessionObj.get(Alimento.class, id);
+			alimentoObj.setNome(novoNome);
+			alimentoObj.setPreco(Float.parseFloat(novoPreco));
 
 			// Committing The Transactions To The Database
 			sessionObj.getTransaction().commit();
@@ -124,19 +121,19 @@ public class DbOperationsAlimento {
 
 	// Method 4(a): This Method Is Used To Delete A Particular Record From The
 	// Database Table
-	public static void deleteRecord(Integer id) {
+	public static void deleteRecord(int id) {
 		try {
 			// Getting Session Object From SessionFactory
 			sessionObj = buildSessionFactory().openSession();
 			// Getting Transaction Object From Session Object
 			sessionObj.beginTransaction();
 
-			Alimento alimentoObj = findRecordById(id);
+			Alimento alimentoObj = findRecordByName(id);
 			sessionObj.delete(alimentoObj);
 
 			// Committing The Transactions To The Database
 			sessionObj.getTransaction().commit();
-			logger.info("\nAlimento With Id?= " + id + " Is Successfully Deleted From The Database!\n");
+			logger.info("\nAlimento With Nome?= " + id + " Is Successfully Deleted From The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -151,7 +148,7 @@ public class DbOperationsAlimento {
 	}
 
 	// Method 4(b): This Method To Find Particular Record In The Database Table
-	public static Alimento findRecordById(Integer id) {
+	public static Alimento findRecordByName(int id) {
 		Alimento findAlimentoObj = null;
 		try {
 			// Getting Session Object From SessionFactory
@@ -178,7 +175,7 @@ public class DbOperationsAlimento {
 			// Getting Transaction Object From Session Object
 			sessionObj.beginTransaction();
 
-			Query queryObj = sessionObj.createQuery("DELETE FROM Alimento_704593_706002");
+			Query queryObj = sessionObj.createQuery("DELETE FROM Alimento");
 			queryObj.executeUpdate();
 
 			// Committing The Transactions To The Database

@@ -101,6 +101,15 @@ public class TelaAlimento extends JFrame implements ActionListener {
         btnPesquisar.setActionCommand("pesquisar");
         contentPane.add(btnPesquisar);
         txtID = "";
+        this.carregaLista();
+    }
+
+    public void carregaLista() {
+        List<Alimento> AlimentoBd = DbOperationsAlimento.displayRecords();
+        cbPesquisar.removeAllItems();
+        for (Alimento alimento : AlimentoBd) {
+            cbPesquisar.addItem(alimento.getId());
+        }
     }
 
     public Alimento montaAlimento() {
@@ -145,21 +154,89 @@ public class TelaAlimento extends JFrame implements ActionListener {
 
     }
 
+    /*
+     * public void actionPerformed(ActionEvent e) {
+     * if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
+     * DbOperationsAlimento.createRecord(txtNome.getText(), txtPreco.getText());
+     * this.limpaTela();
+     * JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() +
+     * " cadastrado...");
+     * } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand()))
+     * {
+     * String nomeDigitado = txtNome.getText();
+     * Alimento cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
+     * if (cbusca.getName().equals(nomeDigitado)) {
+     * JOptionPane.showMessageDialog(null, "Alimento encontrado!");
+     * this.carregaAlimentonaTela(cbusca);
+     * } else {
+     * JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+     * 
+     * }
+     * 
+     * } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
+     * this.limpaTela();
+     * } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
+     * DbOperationsAlimento.deleteRecord(txtNome.getText());
+     * this.limpaTela();
+     * JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() +
+     * " excluído...");
+     * }
+     * if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
+     * 
+     * }
+     * }
+     */
+
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
-            DbOperationsAlimento.createRecord();
+            DbOperationsAlimento.createRecord(txtNome.getText(), txtPreco.getText());
+
+            this.limpaTela();
+            this.carregaLista();
             JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() + " cadastrado...");
-            // Abre diálogo de mensagem, informando que o cliente foi cadastrado;
         } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
 
+            int idDigitado = Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
+            Alimento alimento = DbOperationsAlimento.findRecordByName(idDigitado);
+            if (alimento.getId() == idDigitado) {
+                JOptionPane.showMessageDialog(null, "Alimento encontrado!");
+                this.carregaAlimentonaTela(alimento);
+            } else {
+                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+
+            }
         } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
             this.limpaTela();
         } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
+            int idDigitado = Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
+            Alimento cbusca = DbOperationsAlimento.findRecordByName(idDigitado);
+            if (cbusca == null)
+                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+            else
 
+            {
+                JOptionPane.showMessageDialog(null, "Alimento excluido!");
+                this.carregaAlimentonaTela(cbusca);
+                DbOperationsAlimento.deleteRecord(idDigitado);
+                this.limpaTela();
+                this.carregaLista();
+            }
         }
         if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
+            int idDigitado = Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
+            Alimento cbusca = DbOperationsAlimento.findRecordByName(idDigitado);
+            if (cbusca == null)
+                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+            else
 
+            {
+                JOptionPane.showMessageDialog(null, "Alimento editado!");
+
+                DbOperationsAlimento.updateRecord(idDigitado, txtNome.getText(), txtPreco.getText());
+                this.limpaTela();
+                this.carregaLista();
+            }
         }
-    }
 
+    }
 }
