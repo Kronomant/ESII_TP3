@@ -16,7 +16,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
     private JPanel contentPane;
     private JTextField txtNome;
     private JTextField txtPreco;
-    private String txtID;
     private JComboBox cbPesquisar;
     private ButtonGroup bt = new ButtonGroup();
 
@@ -100,7 +99,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
         btnPesquisar.addActionListener(this);
         btnPesquisar.setActionCommand("pesquisar");
         contentPane.add(btnPesquisar);
-        txtID = "";
         this.carregaLista();
     }
 
@@ -108,7 +106,7 @@ public class TelaAlimento extends JFrame implements ActionListener {
         List<Alimento704593e706002> AlimentoBd = DbOperationsAlimento.displayRecords();
         cbPesquisar.removeAllItems();
         for (Alimento704593e706002 alimento : AlimentoBd) {
-            cbPesquisar.addItem(alimento.getId());
+            cbPesquisar.addItem(alimento.getName());
         }
     }
 
@@ -121,7 +119,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
 
     public Alimento704593e706002 editaAlimento(int i) {
         Alimento704593e706002 c = new Alimento704593e706002();
-        c.setId(i);
         c.setNome(this.txtNome.getText());
         c.setPreco(Float.parseFloat(this.txtPreco.getText()));
         return c;
@@ -152,9 +149,9 @@ public class TelaAlimento extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() + " cadastrado...");
         } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
 
-            int idDigitado = Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
-            Alimento704593e706002 alimento = DbOperationsAlimento.findRecordByName(idDigitado);
-            if (alimento.getId() == idDigitado) {
+            String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
+            Alimento704593e706002 alimento = DbOperationsAlimento.findRecordByName(nomeDigitado);
+            if (alimento.getName().equals(nomeDigitado)) {
                 JOptionPane.showMessageDialog(null, "Alimento encontrado!");
                 this.carregaAlimentonaTela(alimento);
             } else {
@@ -164,8 +161,8 @@ public class TelaAlimento extends JFrame implements ActionListener {
         } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
             this.limpaTela();
         } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
-            int idDigitado = Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
-            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(idDigitado);
+            String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
+            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
             if (cbusca == null)
                 JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
             else
@@ -173,14 +170,14 @@ public class TelaAlimento extends JFrame implements ActionListener {
             {
                 JOptionPane.showMessageDialog(null, "Alimento excluido!");
                 this.carregaAlimentonaTela(cbusca);
-                DbOperationsAlimento.deleteRecord(idDigitado);
+                DbOperationsAlimento.deleteRecord(nomeDigitado);
                 this.limpaTela();
                 this.carregaLista();
             }
         }
         if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
-            int idDigitado = Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
-            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(idDigitado);
+            String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
+            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
             if (cbusca == null)
                 JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
             else
@@ -188,7 +185,7 @@ public class TelaAlimento extends JFrame implements ActionListener {
             {
                 JOptionPane.showMessageDialog(null, "Alimento editado!");
 
-                DbOperationsAlimento.updateRecord(idDigitado, txtNome.getText(), txtPreco.getText());
+                DbOperationsAlimento.updateRecord(nomeDigitado, txtNome.getText(), txtPreco.getText());
                 this.limpaTela();
                 this.carregaLista();
             }

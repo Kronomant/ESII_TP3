@@ -77,16 +77,16 @@ public class DbOperationsAlimento {
 		return alimentosList;
 	}
 
-	public static void updateRecord(int id, String novoNome, String novoPreco) {
+	public static void updateRecord(String nomeDigitado, String novoNome, String novoPreco) {
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
-
-			Alimento704593e706002 alimentoObj = (Alimento704593e706002) sessionObj.get(Alimento704593e706002.class, id);
+			Alimento704593e706002 alimentoObj = (Alimento704593e706002) sessionObj.get(Alimento704593e706002.class,
+					nomeDigitado);
 			alimentoObj.setNome(novoNome);
 			alimentoObj.setPreco(Float.parseFloat(novoPreco));
 			sessionObj.getTransaction().commit();
-			logger.info("\nAlimento With Id?= " + id + " Is Successfully Updated In The Database!\n");
+			logger.info("\nAlimento With Nome?= " + nomeDigitado + " Is Successfully Updated In The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -100,15 +100,15 @@ public class DbOperationsAlimento {
 		}
 	}
 
-	public static void deleteRecord(int id) {
+	public static void deleteRecord(String nome) {
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			Alimento704593e706002 alimentoObj = findRecordByName(id);
+			Alimento704593e706002 alimentoObj = findRecordByName(nome);
 			sessionObj.delete(alimentoObj);
 			sessionObj.getTransaction().commit();
-			logger.info("\nAlimento With Nome?= " + id + " Is Successfully Deleted From The Database!\n");
+			logger.info("\nAlimento With Nome?= " + nome + " Is Successfully Deleted From The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -122,13 +122,13 @@ public class DbOperationsAlimento {
 		}
 	}
 
-	public static Alimento704593e706002 findRecordByName(int id) {
+	public static Alimento704593e706002 findRecordByName(String nome) {
 		Alimento704593e706002 findAlimentoObj = null;
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			findAlimentoObj = (Alimento704593e706002) sessionObj.load(Alimento704593e706002.class, id);
+			findAlimentoObj = (Alimento704593e706002) sessionObj.load(Alimento704593e706002.class, nome);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
