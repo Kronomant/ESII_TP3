@@ -1140,3 +1140,18 @@ Contato With Id?= 1 Is Successfully Updated In The Database!
 2022-03-19 21:43:44 INFO  AppMain:14 - 
 =======CREATE RECORDS=======
 
+2022-03-20 15:04:57 INFO  DbOperationsAlimento:89 - 
+Alimento With Id?= 3 Is Successfully Updated In The Database!
+
+2022-03-20 15:05:06 INFO  DbOperationsAlimento:111 - 
+Alimento With Nome?= 3 Is Successfully Deleted From The Database!
+
+2022-03-20 15:36:11 INFO  DbOperationsAlimento:89 - 
+Alimento With Id?= 4 Is Successfully Updated In The Database!
+
+2022-03-20 15:37:20 INFO  DbOperationsAlimento:68 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 15:38:39 INFO  DbOperationsAlimento:44 - 
+Successfully Created Records In The Database!
+

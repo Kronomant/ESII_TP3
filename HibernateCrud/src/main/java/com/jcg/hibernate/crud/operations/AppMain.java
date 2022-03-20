@@ -1,6 +1,6 @@
 package com.jcg.hibernate.crud.operations;
 
-public class TesteAlimento {
+public class AppMain {
 
     public static void main(String args[]) {
 
