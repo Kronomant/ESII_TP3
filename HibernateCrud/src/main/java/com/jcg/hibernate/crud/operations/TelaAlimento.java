@@ -113,8 +113,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
     }
 
     public Alimento montaAlimento() {
-        // Pega os dados digitados nos campos do formulário e atribui ao objeto da
-        // classe Alimento;
         Alimento c = new Alimento();
         c.setNome(this.txtNome.getText());
         c.setPreco(Float.parseFloat(this.txtPreco.getText()));
@@ -122,8 +120,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
     }
 
     public Alimento editaAlimento(int i) {
-        // Pega os dados digitados nos campos do formulário e atribui ao objeto da
-        // classe Alimento;
         Alimento c = new Alimento();
         c.setId(i);
         c.setNome(this.txtNome.getText());
@@ -132,60 +128,20 @@ public class TelaAlimento extends JFrame implements ActionListener {
     }
 
     public void carregaAlimentonaTela(Alimento c2) {
-        // Pega os dados digitados nos campos do formulário e atribui ao objeto da
-        // classe Alimento;
         this.txtNome.setText(c2.getName());
         this.txtPreco.setText(Float.toString(c2.getPreco()));
     }
 
     public void limpaTela() {
         for (int i = 0; i < contentPane.getComponentCount(); i++) {
-            // laço de repetição percorrendo o contentPane - JPanel, o painel principal do
-            // form
             Component c = contentPane.getComponent(i);
-            // Cria um objeto Component c que recebe o componente na posição i do laço for
-            if (c instanceof JTextField) { // se o componente c for uma instância de JTextField
+            if (c instanceof JTextField) {
                 JTextField campo = (JTextField) c;
-                // cria uma variável JTextField recebendo o componente c com um cast
                 campo.setText(null);
-                // apaga o conteúdo do campo JTextField;
             }
         }
 
     }
-
-    /*
-     * public void actionPerformed(ActionEvent e) {
-     * if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
-     * DbOperationsAlimento.createRecord(txtNome.getText(), txtPreco.getText());
-     * this.limpaTela();
-     * JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() +
-     * " cadastrado...");
-     * } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand()))
-     * {
-     * String nomeDigitado = txtNome.getText();
-     * Alimento cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
-     * if (cbusca.getName().equals(nomeDigitado)) {
-     * JOptionPane.showMessageDialog(null, "Alimento encontrado!");
-     * this.carregaAlimentonaTela(cbusca);
-     * } else {
-     * JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
-     * 
-     * }
-     * 
-     * } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
-     * this.limpaTela();
-     * } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
-     * DbOperationsAlimento.deleteRecord(txtNome.getText());
-     * this.limpaTela();
-     * JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() +
-     * " excluído...");
-     * }
-     * if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
-     * 
-     * }
-     * }
-     */
 
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
