@@ -11,12 +11,13 @@ import java.util.List;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class TelaAlimento extends JFrame implements ActionListener {
+public class TelaAnimal extends JFrame implements ActionListener {
 
     private JPanel contentPane;
     private JTextField txtNome;
-    private JTextField txtPreco;
+    private JTextField txtQuantidade;
     private JComboBox cbPesquisar;
+    private JComboBox cbAlimentos;
     private ButtonGroup bt = new ButtonGroup();
 
     private JButton btnSalvar;
@@ -25,8 +26,8 @@ public class TelaAlimento extends JFrame implements ActionListener {
     private JButton btnPesquisar;
     private JButton btnLimpar;
 
-    public TelaAlimento() {
-        setTitle("Cadastro de Alimentos");
+    public TelaAnimal() {
+        setTitle("Cadastro de Animais");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 556, 413);
         contentPane = new JPanel();
@@ -44,10 +45,15 @@ public class TelaAlimento extends JFrame implements ActionListener {
         lblNome.setBounds(10, 79, 109, 14);
         contentPane.add(lblNome);
 
-        JLabel lblPreco = new JLabel("Preco:");
-        lblPreco.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
-        lblPreco.setBounds(10, 104, 109, 14);
-        contentPane.add(lblPreco);
+        JLabel lblQuantidade = new JLabel("Quantidade:");
+        lblQuantidade.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        lblQuantidade.setBounds(10, 104, 109, 14);
+        contentPane.add(lblQuantidade);
+
+        JLabel lblBuscarAlimentos = new JLabel("Buscar Alimentos:");
+        lblBuscarAlimentos.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        lblBuscarAlimentos.setBounds(10, 31, 109, 14);
+        contentPane.add(lblBuscarAlimentos);
 
         cbPesquisar = new JComboBox();
         cbPesquisar.setEditable(true);
@@ -61,11 +67,17 @@ public class TelaAlimento extends JFrame implements ActionListener {
         contentPane.add(txtNome);
         txtNome.setColumns(10);
 
-        txtPreco = new JTextField();
-        txtPreco.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
-        txtPreco.setBounds(129, 101, 365, 20);
-        contentPane.add(txtPreco);
-        txtPreco.setColumns(10);
+        txtQuantidade = new JTextField();
+        txtQuantidade.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        txtQuantidade.setBounds(129, 101, 365, 20);
+        contentPane.add(txtQuantidade);
+        txtQuantidade.setColumns(10);
+
+        cbAlimentos = new JComboBox();
+        cbAlimentos.setEditable(true);
+        cbAlimentos.setBounds(129, 28, 283, 20);
+
+        contentPane.add(cbAlimentos);
 
         btnSalvar = new JButton("Incluir");
         btnSalvar.setBounds(193, 327, 75, 23);
@@ -100,9 +112,10 @@ public class TelaAlimento extends JFrame implements ActionListener {
         btnPesquisar.setActionCommand("pesquisar");
         contentPane.add(btnPesquisar);
         this.carregaLista();
+        this.carregaListaAlimento();
     }
 
-    public void carregaLista() {
+    public void carregaListaAlimento() {
         List<Alimento704593e706002> AlimentoBd = DbOperationsAlimento.displayRecords();
         cbPesquisar.removeAllItems();
         for (Alimento704593e706002 alimento : AlimentoBd) {
@@ -110,23 +123,31 @@ public class TelaAlimento extends JFrame implements ActionListener {
         }
     }
 
-    public Alimento704593e706002 montaAlimento() {
-        Alimento704593e706002 c = new Alimento704593e706002();
+    public void carregaLista() {
+        List<Animal704593e706002> AnimalBd = DbOperationsAnimal.displayRecords();
+        cbPesquisar.removeAllItems();
+        for (Animal704593e706002 Animal : AnimalBd) {
+            cbPesquisar.addItem(Animal.getName());
+        }
+    }
+
+    public Animal704593e706002 montaAnimal() {
+        Animal704593e706002 c = new Animal704593e706002();
         c.setNome(this.txtNome.getText());
-        c.setPreco(Float.parseFloat(this.txtPreco.getText()));
+        c.setQuantidade(Integer.parseInt(this.txtQuantidade.getText()));
         return c;
     }
 
-    public Alimento704593e706002 editaAlimento(int i) {
-        Alimento704593e706002 c = new Alimento704593e706002();
+    public Animal704593e706002 editaAnimal(int i) {
+        Animal704593e706002 c = new Animal704593e706002();
         c.setNome(this.txtNome.getText());
-        c.setPreco(Float.parseFloat(this.txtPreco.getText()));
+        c.setQuantidade(Integer.parseInt(this.txtQuantidade.getText()));
         return c;
     }
 
-    public void carregaAlimentonaTela(Alimento704593e706002 c2) {
+    public void carregaAnimalnaTela(Animal704593e706002 c2) {
         this.txtNome.setText(c2.getName());
-        this.txtPreco.setText(Float.toString(c2.getPreco()));
+        this.txtQuantidade.setText(Integer.toString(c2.getQuantidade()));
     }
 
     public void limpaTela() {
@@ -142,50 +163,49 @@ public class TelaAlimento extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
-            DbOperationsAlimento.createRecord(txtNome.getText(), txtPreco.getText());
-
+            DbOperationsAnimal.createRecord(txtNome.getText(), txtQuantidade.getText());
             this.limpaTela();
             this.carregaLista();
-            JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() + " cadastrado...");
+            JOptionPane.showMessageDialog(null, "Animal " + txtNome.getText() + " cadastrado...");
         } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
 
             String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
-            Alimento704593e706002 alimento = DbOperationsAlimento.findRecordByName(nomeDigitado);
-            if (alimento.getName().equals(nomeDigitado)) {
-                JOptionPane.showMessageDialog(null, "Alimento encontrado!");
-                this.carregaAlimentonaTela(alimento);
+            Animal704593e706002 Animal = DbOperationsAnimal.findRecordByName(nomeDigitado);
+            if (Animal.getName().equals(nomeDigitado)) {
+                JOptionPane.showMessageDialog(null, "Animal encontrado!");
+                this.carregaAnimalnaTela(Animal);
             } else {
-                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+                JOptionPane.showMessageDialog(null, "Animal nao cadastrado...");
 
             }
         } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
             this.limpaTela();
         } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
             String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
-            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
+            Animal704593e706002 cbusca = DbOperationsAnimal.findRecordByName(nomeDigitado);
             if (cbusca == null)
-                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+                JOptionPane.showMessageDialog(null, "Animal nao cadastrado...");
             else
 
             {
-                JOptionPane.showMessageDialog(null, "Alimento excluido!");
-                this.carregaAlimentonaTela(cbusca);
-                DbOperationsAlimento.deleteRecord(nomeDigitado);
+                JOptionPane.showMessageDialog(null, "Animal excluido!");
+                this.carregaAnimalnaTela(cbusca);
+                DbOperationsAnimal.deleteRecord(nomeDigitado);
                 this.limpaTela();
                 this.carregaLista();
             }
         }
         if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
             String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
-            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
+            Animal704593e706002 cbusca = DbOperationsAnimal.findRecordByName(nomeDigitado);
             if (cbusca == null)
-                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+                JOptionPane.showMessageDialog(null, "Animal nao cadastrado...");
             else
 
             {
-                JOptionPane.showMessageDialog(null, "Alimento editado!");
+                JOptionPane.showMessageDialog(null, "Animal editado!");
 
-                DbOperationsAlimento.updateRecord(nomeDigitado, txtNome.getText(), txtPreco.getText());
+                DbOperationsAnimal.updateRecord(nomeDigitado, txtNome.getText(), txtQuantidade.getText());
                 this.limpaTela();
                 this.carregaLista();
             }

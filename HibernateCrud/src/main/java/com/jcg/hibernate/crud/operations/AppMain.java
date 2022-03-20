@@ -7,5 +7,11 @@ public class AppMain {
         TelaProduto TC = new TelaProduto();
         TC.setVisible(true);
 
+        TelaAlimento telaAlimento = new TelaAlimento();
+        telaAlimento.setVisible(false);
+
+        TelaAnimal telaAnimal = new TelaAnimal();
+        telaAnimal.setVisible(false);
+
     }
 }
