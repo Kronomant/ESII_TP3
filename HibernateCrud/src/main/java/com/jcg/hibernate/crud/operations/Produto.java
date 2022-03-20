@@ -29,16 +29,8 @@ public class Produto implements Serializable {
 	@Column(name = "preco")
 	private float preco;
 
-	@Column(name = "id_animal")
-	private int id_animal;
-
-	public Produto(int id, String nome, int quantidade, float preco, int animal) {
-		this.id = id;
-		this.nome = nome;
-		this.quantidade_produzida = quantidade;
-		this.preco = preco;
-		this.id_animal = animal;
-	}
+	@Column(name = "animal")
+	private String animal;
 
 	public int getId() {
 		return id;
@@ -72,12 +64,12 @@ public class Produto implements Serializable {
 		this.preco = preco;
 	}
 
-	public int getIdAnimal() {
-		return id_animal;
+	public String getIdAnimal() {
+		return this.animal;
 	}
 
-	public void setIdAnimal(int id_animal) {
-		this.id_animal = id_animal;
+	public void setIdAnimal(String id_animal) {
+		this.animal = id_animal;
 	}
 
 	@Override
@@ -85,6 +77,6 @@ public class Produto implements Serializable {
 		return "Produto Details?= Id: " + this.id + ", Nome: " + this.nome
 				+ ", Quantidade Produzida: " + this.quantidade_produzida
 				+ ", Preço: R$" + this.preco
-				+ ", animal: R$" + this.id_animal;
+				+ ", animal: " + this.animal;
 	}
 }
