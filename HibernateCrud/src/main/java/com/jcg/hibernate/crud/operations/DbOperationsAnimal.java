@@ -11,12 +11,12 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-public class DbOperationsAlimento {
+public class DbOperationsAnimal {
 
 	static Session sessionObj;
 	static SessionFactory sessionFactoryObj;
 
-	public final static Logger logger = Logger.getLogger(DbOperationsAlimento.class);
+	public final static Logger logger = Logger.getLogger(DbOperationsAnimal.class);
 
 	private static SessionFactory buildSessionFactory() {
 		Configuration configObj = new Configuration();
@@ -29,16 +29,18 @@ public class DbOperationsAlimento {
 		return sessionFactoryObj;
 	}
 
-	public static void createRecord(String nomeDigitado, String precoDigitado) {
-		Alimento704593e706002 alimentoObj = new Alimento704593e706002();
+	public static void createRecord(String nomeDigitado, String quantidadeDigitada) {
+		Animal704593e706002 AnimalObj = new Animal704593e706002();
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
-
-			alimentoObj = new Alimento704593e706002();
-			alimentoObj.setPreco(Float.parseFloat(precoDigitado));
-			alimentoObj.setNome(nomeDigitado);
-			sessionObj.save(alimentoObj);
+			System.out.println(nomeDigitado + quantidadeDigitada);
+			AnimalObj = new Animal704593e706002();
+			AnimalObj.setQuantidade(Integer.parseInt(quantidadeDigitada));
+			AnimalObj.setProdutosDerivados("");
+			AnimalObj.setAlimentosConsumidos(1);
+			AnimalObj.setNome(nomeDigitado);
+			sessionObj.save(AnimalObj);
 
 			sessionObj.getTransaction().commit();
 			logger.info("\nSuccessfully Created Records In The Database!\n");
@@ -56,13 +58,13 @@ public class DbOperationsAlimento {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static List<Alimento704593e706002> displayRecords() {
-		List<Alimento704593e706002> alimentosList = new ArrayList<Alimento704593e706002>();
+	public static List<Animal704593e706002> displayRecords() {
+		List<Animal704593e706002> AnimalsList = new ArrayList<Animal704593e706002>();
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			alimentosList = sessionObj.createQuery("FROM Alimento704593e706002").list();
+			AnimalsList = sessionObj.createQuery("FROM Animal704593e706002").list();
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -74,19 +76,21 @@ public class DbOperationsAlimento {
 				sessionObj.close();
 			}
 		}
-		return alimentosList;
+		return AnimalsList;
 	}
 
-	public static void updateRecord(String nomeDigitado, String novoNome, String novoPreco) {
+	public static void updateRecord(String nomeDigitado, String novoNome, String novaQuantidade) {
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
-			Alimento704593e706002 alimentoObj = (Alimento704593e706002) sessionObj.get(Alimento704593e706002.class,
+			Animal704593e706002 AnimalObj = (Animal704593e706002) sessionObj.get(Animal704593e706002.class,
 					nomeDigitado);
-			alimentoObj.setNome(novoNome);
-			alimentoObj.setPreco(Float.parseFloat(novoPreco));
+			AnimalObj.setNome(novoNome);
+			AnimalObj.setQuantidade(Integer.parseInt(novaQuantidade));
+			AnimalObj.setProdutosDerivados("");
+			AnimalObj.setAlimentosConsumidos(1);
 			sessionObj.getTransaction().commit();
-			logger.info("\nAlimento With Nome?= " + nomeDigitado + " Is Successfully Updated In The Database!\n");
+			logger.info("\nAnimal With Nome?= " + nomeDigitado + " Is Successfully Updated In The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -105,10 +109,10 @@ public class DbOperationsAlimento {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			Alimento704593e706002 alimentoObj = findRecordByName(nome);
-			sessionObj.delete(alimentoObj);
+			Animal704593e706002 AnimalObj = findRecordByName(nome);
+			sessionObj.delete(AnimalObj);
 			sessionObj.getTransaction().commit();
-			logger.info("\nAlimento With Nome?= " + nome + " Is Successfully Deleted From The Database!\n");
+			logger.info("\nAnimal With Nome?= " + nome + " Is Successfully Deleted From The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -122,13 +126,13 @@ public class DbOperationsAlimento {
 		}
 	}
 
-	public static Alimento704593e706002 findRecordByName(String nome) {
-		Alimento704593e706002 findAlimentoObj = null;
+	public static Animal704593e706002 findRecordByName(String nome) {
+		Animal704593e706002 findAnimalObj = null;
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			findAlimentoObj = (Alimento704593e706002) sessionObj.load(Alimento704593e706002.class, nome);
+			findAnimalObj = (Animal704593e706002) sessionObj.load(Animal704593e706002.class, nome);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -136,7 +140,7 @@ public class DbOperationsAlimento {
 			}
 			sqlException.printStackTrace();
 		}
-		return findAlimentoObj;
+		return findAnimalObj;
 	}
 
 	public static void deleteAllRecords() {
@@ -144,7 +148,7 @@ public class DbOperationsAlimento {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			Query queryObj = sessionObj.createQuery("DELETE FROM Alimento704593e706002");
+			Query queryObj = sessionObj.createQuery("DELETE FROM Animal704593e706002");
 			queryObj.executeUpdate();
 
 			sessionObj.getTransaction().commit();
