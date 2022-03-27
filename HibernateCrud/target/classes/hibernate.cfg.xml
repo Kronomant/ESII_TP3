@@ -18,5 +18,6 @@
 <!--  Mapping With Model Class Containing Annotations  -->
 <mapping class="com.jcg.hibernate.crud.operations.Alimento704593e706002"/>
 <mapping class="com.jcg.hibernate.crud.operations.Animal704593e706002"/>
+<mapping class="com.jcg.hibernate.crud.operations.Produto704593e706002"/>
 </session-factory>
 </hibernate-configuration>

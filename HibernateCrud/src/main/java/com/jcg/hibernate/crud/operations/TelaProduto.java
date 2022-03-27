@@ -15,9 +15,12 @@ public class TelaProduto extends JFrame implements ActionListener {
 
     private JPanel contentPane;
     private JTextField txtNome;
+    private JTextField txtQtde;
     private JTextField txtPreco;
-    private String txtID;
+    private JTextField txtAnimal;
+
     private JComboBox cbPesquisar;
+    private JComboBox cbAnimal;
     private ButtonGroup bt = new ButtonGroup();
 
     private JButton btnSalvar;
@@ -35,38 +38,79 @@ public class TelaProduto extends JFrame implements ActionListener {
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
+        // Labels
+
+        // Label de Pesquisa
         JLabel lblPesquisar = new JLabel("Pesquisar:");
         lblPesquisar.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblPesquisar.setBounds(10, 31, 109, 14);
         contentPane.add(lblPesquisar);
 
+        // Label campo Nome
         JLabel lblNome = new JLabel("Nome:");
         lblNome.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblNome.setBounds(10, 79, 109, 14);
         contentPane.add(lblNome);
 
+        // Label quantidade
+        JLabel lblQtde = new JLabel("Quantidade produzida:");
+        lblQtde.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        lblQtde.setBounds(10, 104, 169, 14);
+        contentPane.add(lblQtde);
+
+        // Label Preço
         JLabel lblPreco = new JLabel("Preco:");
         lblPreco.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
-        lblPreco.setBounds(10, 104, 109, 14);
+        lblPreco.setBounds(10, 124, 109, 14);
         contentPane.add(lblPreco);
 
+        // Label Animal
+        JLabel lblAnimal = new JLabel("Animal:");
+        lblAnimal.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        lblAnimal.setBounds(10, 150, 109, 14);
+        contentPane.add(lblAnimal);
+
+        // Select de Pesquisa
         cbPesquisar = new JComboBox();
         cbPesquisar.setEditable(true);
         cbPesquisar.setBounds(129, 28, 283, 20);
-
         contentPane.add(cbPesquisar);
 
+        // Input Nome
         txtNome = new JTextField();
         txtNome.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         txtNome.setBounds(129, 76, 283, 20);
         contentPane.add(txtNome);
         txtNome.setColumns(10);
 
+        // Input Quantidade
+        txtQtde = new JTextField();
+        txtQtde.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        txtQtde.setBounds(180, 101, 283, 20);
+        contentPane.add(txtQtde);
+        txtQtde.setColumns(10);
+
+        // Input Preco
         txtPreco = new JTextField();
         txtPreco.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
-        txtPreco.setBounds(129, 101, 365, 20);
+        txtPreco.setBounds(129, 124, 283, 20);
         contentPane.add(txtPreco);
         txtPreco.setColumns(10);
+
+        // Input Animal
+        // txtAnimal = new JTextField();
+        // txtAnimal.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        // txtAnimal.setBounds(129, 150, 283, 20);
+        // contentPane.add(txtAnimal);
+        // txtAnimal.setColumns(10);
+
+        // Select Animal
+        cbAnimal = new JComboBox();
+        cbAnimal.setEditable(true);
+        cbAnimal.setBounds(129, 150, 283, 20);
+        contentPane.add(cbAnimal);
+
+        // Botões
 
         btnSalvar = new JButton("Incluir");
         btnSalvar.setBounds(193, 327, 75, 23);
@@ -100,36 +144,37 @@ public class TelaProduto extends JFrame implements ActionListener {
         btnPesquisar.addActionListener(this);
         btnPesquisar.setActionCommand("pesquisar");
         contentPane.add(btnPesquisar);
-        txtID = "";
         this.carregaLista();
     }
 
     public void carregaLista() {
-        List<Produto> AlimentoBd = DbOperationsProduto.displayRecords();
+        // Carrega lista de produtos
+        List<Produto704593e706002> ProdutoBd = DbOperationsProduto.displayRecords();
         cbPesquisar.removeAllItems();
-        for (Produto alimento : AlimentoBd) {
-            cbPesquisar.addItem(alimento.getId());
+        // Adiciona lista de produto no select
+        for (Produto704593e706002 produto : ProdutoBd) {
+            cbPesquisar.addItem(produto.getNome());
+        }
+
+        List<Animal704593e706002> AnimalBD = DbOperationsAnimal.displayRecords();
+        cbAnimal.removeAllItems();
+        for (Animal704593e706002 animal : AnimalBD) {
+            cbAnimal.addItem(animal);
         }
     }
 
-    public Produto montaAlimento() {
-        Produto c = new Produto();
+    public Produto704593e706002 montaProduto() {
+        Produto704593e706002 c = new Produto704593e706002();
         c.setNome(this.txtNome.getText());
         c.setPreco(Float.parseFloat(this.txtPreco.getText()));
         return c;
     }
 
-    public Produto editaAlimento(int i) {
-        Produto c = new Produto();
-        c.setId(i);
-        c.setNome(this.txtNome.getText());
-        c.setPreco(Float.parseFloat(this.txtPreco.getText()));
-        return c;
-    }
-
-    public void carregaAlimentonaTela(Produto c2) {
-        this.txtNome.setText(c2.getName());
+    public void carregaProdutonaTela(Produto704593e706002 c2) {
+        this.txtNome.setText(c2.getNome());
         this.txtPreco.setText(Float.toString(c2.getPreco()));
+        this.txtQtde.setText(Integer.toString(c2.getQuantidadeProduzida()));
+        this.txtAnimal.setText(c2.getAnimal());
     }
 
     public void limpaTela() {
@@ -144,61 +189,56 @@ public class TelaProduto extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        // if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
-        // DbOperationsProduto.createRecord(txtNome.getText(), txtPreco.getText());
+        if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
+            DbOperationsProduto.createRecord(txtNome.getText(), txtQtde.getText(), txtPreco.getText(),
+                    txtAnimal.getText());
 
-        // this.limpaTela();
-        // this.carregaLista();
-        // JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() + "
-        // cadastrado...");
-        // } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand()))
-        // {
+            this.limpaTela();
+            this.carregaLista();
+            JOptionPane.showMessageDialog(null, "Produto " + txtNome.getText() + "cadastrado...");
+        } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
 
-        // int idDigitado =
-        // Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
-        // Produto alimento = DbOperationsProduto.findRecordByName(idDigitado);
-        // if (alimento.getId() == idDigitado) {
-        // JOptionPane.showMessageDialog(null, "Alimento encontrado!");
-        // this.carregaAlimentonaTela(alimento);
-        // } else {
-        // JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+            String nomeDigitado = cbPesquisar.getSelectedItem().toString();
+            Produto704593e706002 produto = DbOperationsProduto.findRecordByName(nomeDigitado);
+            if (produto.getNome() == nomeDigitado) {
 
-        // }
-        // } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
-        // this.limpaTela();
-        // } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
-        // int idDigitado =
-        // Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
-        // Produto cbusca = DbOperationsProduto.findRecordByName(idDigitado);
-        // if (cbusca == null)
-        // JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
-        // else
+                this.carregaProdutonaTela(produto);
+            } else {
+                JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
 
-        // {
-        // JOptionPane.showMessageDialog(null, "Alimento excluido!");
-        // this.carregaAlimentonaTela(cbusca);
-        // DbOperationsProduto.deleteRecord(idDigitado);
-        // this.limpaTela();
-        // this.carregaLista();
-        // }
-        // }
-        // if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
-        // int idDigitado =
-        // Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
-        // Produto cbusca = DbOperationsProduto.findRecordByName(idDigitado);
-        // if (cbusca == null)
-        // JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
-        // else
+            }
+        } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
+            this.limpaTela();
+        } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
+            String nomeDigitado = cbPesquisar.getSelectedItem().toString();
+            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(nomeDigitado);
 
-        // {
-        // JOptionPane.showMessageDialog(null, "Alimento editado!");
+            if (cbusca == null)
+                JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
+            else {
 
-        // DbOperationsProduto.updateRecord(idDigitado, txtNome.getText(),
-        // txtPreco.getText());
-        // this.limpaTela();
-        // this.carregaLista();
-        // }
-        // }
+                this.carregaProdutonaTela(cbusca);
+                DbOperationsProduto.deleteRecord(nomeDigitado);
+                this.limpaTela();
+                this.carregaLista();
+            }
+        }
+        if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
+            String nomeAntigo = cbPesquisar.getSelectedItem().toString().trim();
+            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(nomeAntigo);
+            if (cbusca == null)
+                JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
+            else {
+                DbOperationsProduto.updateRecord(
+                        nomeAntigo,
+                        txtNome.getText(),
+                        txtQtde.getText(),
+                        txtPreco.getText(),
+                        txtAnimal.getText());
+                this.limpaTela();
+                this.carregaLista();
+            }
+        }
 
     }
 }

@@ -17,6 +17,9 @@ public class Animal704593e706002 implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "id")
+	private int id;
+
 	@Column(name = "nome")
 	private String Nome;
 
@@ -28,6 +31,14 @@ public class Animal704593e706002 implements Serializable {
 
 	@Column(name = "produtos_derivados")
 	private String produtos_derivados;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return Nome;
@@ -63,6 +74,6 @@ public class Animal704593e706002 implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Animal Details?= Nome: " + this.Nome + ", quantidade: " + this.quantidade;
+		return "Animal Details?= Id: " + this.id + ", nome: " + this.Nome + ", quantidade: " + this.quantidade;
 	}
 }

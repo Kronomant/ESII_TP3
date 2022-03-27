@@ -30,9 +30,16 @@ public class DbOperationsProduto {
 		return sessionFactoryObj;
 	}
 
-	public static void createRecord(Produto produtoObj) {
+	public static void createRecord(String nome, String quantidade, String preco, String animal) {
 		logger.info("\n\n.......Função de adicionar registro.......\n");
+		Produto704593e706002 produtoObj = new Produto704593e706002();
 		try {
+
+			// Seta objeto com dados recebidos da tela
+			produtoObj.setNome(nome);
+			produtoObj.setQuantidadeProduzida(Integer.parseInt(quantidade));
+			produtoObj.setPreco(Float.parseFloat(preco));
+			produtoObj.setAnimal(animal);
 
 			sessionObj = buildSessionFactory().openSession();
 
@@ -56,8 +63,8 @@ public class DbOperationsProduto {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static List<Produto> displayRecords() {
-		List<Produto> produtosList = new ArrayList<Produto>();
+	public static List<Produto704593e706002> displayRecords() {
+		List<Produto704593e706002> produtosList = new ArrayList<Produto704593e706002>();
 		try {
 
 			sessionObj = buildSessionFactory().openSession();
@@ -79,15 +86,22 @@ public class DbOperationsProduto {
 		return produtosList;
 	}
 
-	public static void updateRecord(Produto produtoObj) {
+	public static void updateRecord(String nome, String novoNome, String quantidade, String preco, String animal) {
 		try {
-
+			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			sessionObj.save(produtoObj);
+			Produto704593e706002 produtoObj = (Produto704593e706002) sessionObj.get(Produto704593e706002.class, nome);
+
+			produtoObj.setNome(novoNome);
+			produtoObj.setQuantidadeProduzida(Integer.parseInt(quantidade));
+			produtoObj.setPreco(Float.parseFloat(preco));
+			produtoObj.setAnimal(animal);
 
 			sessionObj.getTransaction().commit();
-			logger.info("\nProduto With Id?= " + produtoObj.getId() + " Is Successfully Updated In The Database!\n");
+
+			logger.info(
+					"\nProduto With nome?= " + produtoObj.getNome() + " Is Successfully Updated In The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -101,18 +115,17 @@ public class DbOperationsProduto {
 		}
 	}
 
-	public static void deleteRecord(Integer id) {
+	public static void deleteRecord(String nome) {
 		try {
 
 			sessionObj = buildSessionFactory().openSession();
 
 			sessionObj.beginTransaction();
-
-			Produto produtoObj = findRecordById(id);
+			Produto704593e706002 produtoObj = findRecordByName(nome);
 			sessionObj.delete(produtoObj);
 
 			sessionObj.getTransaction().commit();
-			logger.info("\nProduto With Id?= " + id + " Is Successfully Deleted From The Database!\n");
+			logger.info("\nProduto With Nome?= " + nome + " Is Successfully Deleted From The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -126,15 +139,15 @@ public class DbOperationsProduto {
 		}
 	}
 
-	public static Produto findRecordById(Integer id) {
-		Produto findProdutoObj = null;
+	public static Produto704593e706002 findRecordByName(String name) {
+		Produto704593e706002 findProdutoObj = null;
 		try {
 
 			sessionObj = buildSessionFactory().openSession();
 
 			sessionObj.beginTransaction();
 
-			findProdutoObj = (Produto) sessionObj.load(Produto.class, id);
+			findProdutoObj = (Produto704593e706002) sessionObj.load(Produto704593e706002.class, name);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");

@@ -10,14 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "PRODUTO")
-public class Produto implements Serializable {
+@Table(name = "Produto")
+public class Produto704593e706002 implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
 	@Column(name = "nome")
@@ -40,7 +39,7 @@ public class Produto implements Serializable {
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getNome() {
 		return nome;
 	}
 
@@ -64,17 +63,17 @@ public class Produto implements Serializable {
 		this.preco = preco;
 	}
 
-	public String getIdAnimal() {
+	public String getAnimal() {
 		return this.animal;
 	}
 
-	public void setIdAnimal(String id_animal) {
+	public void setAnimal(String id_animal) {
 		this.animal = id_animal;
 	}
 
 	@Override
 	public String toString() {
-		return "Produto Details?= Id: " + this.id + ", Nome: " + this.nome
+		return "Produto Details?= Nome: " + this.nome
 				+ ", Quantidade Produzida: " + this.quantidade_produzida
 				+ ", Preço: R$" + this.preco
 				+ ", animal: " + this.animal;

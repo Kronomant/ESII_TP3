@@ -16,11 +16,22 @@ public class Alimento704593e706002 implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "id")
+	private int id;
+
 	@Column(name = "nome")
 	private String Nome;
 
 	@Column(name = "preco")
 	private float preco;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return Nome;
@@ -40,6 +51,10 @@ public class Alimento704593e706002 implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Alimento Details?= Nome: " + this.Nome + ", preco: " + this.preco;
+		return this.Nome;
+	}
+
+	public String imprimir() {
+		return "Alimento Details?= Id: " + this.id + ", nome: " + this.Nome + ", preco: " + this.preco;
 	}
 }

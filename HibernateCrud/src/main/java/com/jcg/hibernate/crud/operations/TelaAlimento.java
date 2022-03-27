@@ -68,34 +68,34 @@ public class TelaAlimento extends JFrame implements ActionListener {
         txtPreco.setColumns(10);
 
         btnSalvar = new JButton("Incluir");
-        btnSalvar.setBounds(193, 327, 75, 23);
+        btnSalvar.setBounds(20, 327, 95, 23);
         btnSalvar.addActionListener(this);
         btnSalvar.setActionCommand("salvar");
         contentPane.add(btnSalvar);
 
         btnEditar = new JButton("Editar");
-        btnEditar.setBounds(280, 327, 75, 23);
+        btnEditar.setBounds(120, 327, 95, 23);
         btnEditar.setText("Editar");
         btnEditar.addActionListener(this);
         btnEditar.setActionCommand("editar");
         contentPane.add(btnEditar);
 
         btnLimpar = new JButton("Limpar");
-        btnLimpar.setBounds(360, 327, 75, 23);
+        btnLimpar.setBounds(220, 327, 95, 23);
         btnLimpar.setText("Limpar");
         btnLimpar.addActionListener(this);
         btnLimpar.setActionCommand("limpar");
         contentPane.add(btnLimpar);
 
         btnExcluir = new JButton("");
-        btnExcluir.setBounds(440, 327, 75, 23);
+        btnExcluir.setBounds(320, 327, 95, 23);
         btnExcluir.setText("Excluir");
         btnExcluir.addActionListener(this);
         btnExcluir.setActionCommand("excluir");
         contentPane.add(btnExcluir);
 
         btnPesquisar = new JButton("Buscar");
-        btnPesquisar.setBounds(422, 22, 80, 23);
+        btnPesquisar.setBounds(422, 22, 95, 23);
         btnPesquisar.addActionListener(this);
         btnPesquisar.setActionCommand("pesquisar");
         contentPane.add(btnPesquisar);
@@ -106,7 +106,7 @@ public class TelaAlimento extends JFrame implements ActionListener {
         List<Alimento704593e706002> AlimentoBd = DbOperationsAlimento.displayRecords();
         cbPesquisar.removeAllItems();
         for (Alimento704593e706002 alimento : AlimentoBd) {
-            cbPesquisar.addItem(alimento.getName());
+            cbPesquisar.addItem(alimento);
         }
     }
 
@@ -137,7 +137,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
                 campo.setText(null);
             }
         }
-
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -149,9 +148,10 @@ public class TelaAlimento extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, "Alimento " + txtNome.getText() + " cadastrado...");
         } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
 
-            String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
-            Alimento704593e706002 alimento = DbOperationsAlimento.findRecordByName(nomeDigitado);
-            if (alimento.getName().equals(nomeDigitado)) {
+            String idDigitado = cbPesquisar.getSelectedItem().toString().trim();
+
+            Alimento704593e706002 alimento = DbOperationsAlimento.findRecordByName(idDigitado);
+            if (alimento.getName().equals(idDigitado)) {
                 JOptionPane.showMessageDialog(null, "Alimento encontrado!");
                 this.carregaAlimentonaTela(alimento);
             } else {
@@ -161,34 +161,39 @@ public class TelaAlimento extends JFrame implements ActionListener {
         } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
             this.limpaTela();
         } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
-            String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
-            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
-            if (cbusca == null)
-                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
-            else
+            // int idDigitado =
+            // Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
+            // Alimento704593e706002 cbusca =
+            // DbOperationsAlimento.findRecordByName(idDigitado);
+            // if (cbusca == null)
+            // JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+            // else
 
-            {
-                JOptionPane.showMessageDialog(null, "Alimento excluido!");
-                this.carregaAlimentonaTela(cbusca);
-                DbOperationsAlimento.deleteRecord(nomeDigitado);
-                this.limpaTela();
-                this.carregaLista();
-            }
+            // {
+            // JOptionPane.showMessageDialog(null, "Alimento excluido!");
+            // this.carregaAlimentonaTela(cbusca);
+            // DbOperationsAlimento.deleteRecord(idDigitado);
+            // this.limpaTela();
+            // this.carregaLista();
+            // }
         }
         if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
-            String nomeDigitado = cbPesquisar.getSelectedItem().toString().trim();
-            Alimento704593e706002 cbusca = DbOperationsAlimento.findRecordByName(nomeDigitado);
-            if (cbusca == null)
-                JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
-            else
+            // int idDigitado =
+            // Integer.parseInt(cbPesquisar.getSelectedItem().toString().trim());
+            // Alimento704593e706002 cbusca =
+            // DbOperationsAlimento.findRecordByName(idDigitado);
+            // if (cbusca == null)
+            // JOptionPane.showMessageDialog(null, "Alimento nao cadastrado...");
+            // else
 
-            {
-                JOptionPane.showMessageDialog(null, "Alimento editado!");
+            // {
+            // JOptionPane.showMessageDialog(null, "Alimento editado!");
 
-                DbOperationsAlimento.updateRecord(nomeDigitado, txtNome.getText(), txtPreco.getText());
-                this.limpaTela();
-                this.carregaLista();
-            }
+            // DbOperationsAlimento.updateRecord(idDigitado, txtNome.getText(),
+            // txtPreco.getText());
+            // this.limpaTela();
+            // this.carregaLista();
+            // }
         }
 
     }
