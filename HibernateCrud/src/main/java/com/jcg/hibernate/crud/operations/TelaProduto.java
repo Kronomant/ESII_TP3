@@ -17,7 +17,6 @@ public class TelaProduto extends JFrame implements ActionListener {
     private JTextField txtNome;
     private JTextField txtQtde;
     private JTextField txtPreco;
-    private JTextField txtAnimal;
 
     private JComboBox cbPesquisar;
     private JComboBox cbAnimal;
@@ -97,13 +96,6 @@ public class TelaProduto extends JFrame implements ActionListener {
         contentPane.add(txtPreco);
         txtPreco.setColumns(10);
 
-        // Input Animal
-        // txtAnimal = new JTextField();
-        // txtAnimal.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
-        // txtAnimal.setBounds(129, 150, 283, 20);
-        // contentPane.add(txtAnimal);
-        // txtAnimal.setColumns(10);
-
         // Select Animal
         cbAnimal = new JComboBox();
         cbAnimal.setEditable(true);
@@ -113,34 +105,34 @@ public class TelaProduto extends JFrame implements ActionListener {
         // Botões
 
         btnSalvar = new JButton("Incluir");
-        btnSalvar.setBounds(193, 327, 75, 23);
+        btnSalvar.setBounds(20, 327, 95, 23);
         btnSalvar.addActionListener(this);
         btnSalvar.setActionCommand("salvar");
         contentPane.add(btnSalvar);
 
         btnEditar = new JButton("Editar");
-        btnEditar.setBounds(280, 327, 75, 23);
+        btnEditar.setBounds(120, 327, 95, 23);
         btnEditar.setText("Editar");
         btnEditar.addActionListener(this);
         btnEditar.setActionCommand("editar");
         contentPane.add(btnEditar);
 
         btnLimpar = new JButton("Limpar");
-        btnLimpar.setBounds(360, 327, 75, 23);
+        btnLimpar.setBounds(220, 327, 95, 23);
         btnLimpar.setText("Limpar");
         btnLimpar.addActionListener(this);
         btnLimpar.setActionCommand("limpar");
         contentPane.add(btnLimpar);
 
         btnExcluir = new JButton("");
-        btnExcluir.setBounds(440, 327, 75, 23);
+        btnExcluir.setBounds(320, 327, 95, 23);
         btnExcluir.setText("Excluir");
         btnExcluir.addActionListener(this);
         btnExcluir.setActionCommand("excluir");
         contentPane.add(btnExcluir);
 
         btnPesquisar = new JButton("Buscar");
-        btnPesquisar.setBounds(422, 22, 80, 23);
+        btnPesquisar.setBounds(422, 22, 95, 23);
         btnPesquisar.addActionListener(this);
         btnPesquisar.setActionCommand("pesquisar");
         contentPane.add(btnPesquisar);
@@ -153,7 +145,7 @@ public class TelaProduto extends JFrame implements ActionListener {
         cbPesquisar.removeAllItems();
         // Adiciona lista de produto no select
         for (Produto704593e706002 produto : ProdutoBd) {
-            cbPesquisar.addItem(produto.getNome());
+            cbPesquisar.addItem(produto);
         }
 
         List<Animal704593e706002> AnimalBD = DbOperationsAnimal.displayRecords();
@@ -174,7 +166,7 @@ public class TelaProduto extends JFrame implements ActionListener {
         this.txtNome.setText(c2.getNome());
         this.txtPreco.setText(Float.toString(c2.getPreco()));
         this.txtQtde.setText(Integer.toString(c2.getQuantidadeProduzida()));
-        this.txtAnimal.setText(c2.getAnimal());
+        // cbAnimal.setSelectedItem();
     }
 
     public void limpaTela() {
@@ -189,52 +181,57 @@ public class TelaProduto extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
+
         if (e.getActionCommand().equals(this.btnSalvar.getActionCommand())) {
+            String[] animal = cbAnimal.getSelectedItem().toString().split("-");
+
+            // Insere Produto no Banco ok
             DbOperationsProduto.createRecord(txtNome.getText(), txtQtde.getText(), txtPreco.getText(),
-                    txtAnimal.getText());
+                    Integer.parseInt(animal[0]));
 
             this.limpaTela();
             this.carregaLista();
             JOptionPane.showMessageDialog(null, "Produto " + txtNome.getText() + "cadastrado...");
-        } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
+        } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) { // Pesquisa Produto no banco ok
+            String[] produtoDigitado = cbPesquisar.getSelectedItem().toString().split("-");
 
-            String nomeDigitado = cbPesquisar.getSelectedItem().toString();
-            Produto704593e706002 produto = DbOperationsProduto.findRecordByName(nomeDigitado);
-            if (produto.getNome() == nomeDigitado) {
+            Produto704593e706002 produto = DbOperationsProduto.findRecordByName(Integer.parseInt(produtoDigitado[0]));
+            if (produto.getNome().equals(produtoDigitado[1])) {
 
                 this.carregaProdutonaTela(produto);
             } else {
                 JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
 
             }
-        } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) {
+        } else if (e.getActionCommand().equals(this.btnLimpar.getActionCommand())) { // Limpa campos ok
             this.limpaTela();
-        } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
-            String nomeDigitado = cbPesquisar.getSelectedItem().toString();
-            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(nomeDigitado);
+        } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) { // Exclui Registro
+            String[] produtoDigitado = cbPesquisar.getSelectedItem().toString().split("-");
+            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(Integer.parseInt(produtoDigitado[0]));
 
             if (cbusca == null)
                 JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
             else {
 
                 this.carregaProdutonaTela(cbusca);
-                DbOperationsProduto.deleteRecord(nomeDigitado);
+                DbOperationsProduto.deleteRecord(Integer.parseInt(produtoDigitado[0]));
                 this.limpaTela();
                 this.carregaLista();
             }
         }
-        if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
-            String nomeAntigo = cbPesquisar.getSelectedItem().toString().trim();
-            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(nomeAntigo);
+        if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) { // Edita produto
+            String[] produtoDigitado = cbPesquisar.getSelectedItem().toString().split("-");
+            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(Integer.parseInt(produtoDigitado[0]));
             if (cbusca == null)
                 JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
             else {
+                String[] animal = cbAnimal.getSelectedItem().toString().split("-");
                 DbOperationsProduto.updateRecord(
-                        nomeAntigo,
+                        Integer.parseInt(produtoDigitado[0]),
                         txtNome.getText(),
                         txtQtde.getText(),
                         txtPreco.getText(),
-                        txtAnimal.getText());
+                        animal[0]);
                 this.limpaTela();
                 this.carregaLista();
             }

@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Produto")
+@Table(name = "Produto704593e706002")
 public class Produto704593e706002 implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -29,7 +29,7 @@ public class Produto704593e706002 implements Serializable {
 	private float preco;
 
 	@Column(name = "animal")
-	private String animal;
+	private int animal;
 
 	public int getId() {
 		return id;
@@ -63,19 +63,24 @@ public class Produto704593e706002 implements Serializable {
 		this.preco = preco;
 	}
 
-	public String getAnimal() {
+	public int getAnimal() {
 		return this.animal;
 	}
 
-	public void setAnimal(String id_animal) {
+	public void setAnimal(int id_animal) {
 		this.animal = id_animal;
 	}
 
 	@Override
 	public String toString() {
+		return this.id + "-" + this.nome;
+	}
+
+	public String imprimir() {
 		return "Produto Details?= Nome: " + this.nome
 				+ ", Quantidade Produzida: " + this.quantidade_produzida
 				+ ", Preço: R$" + this.preco
 				+ ", animal: " + this.animal;
 	}
+
 }

@@ -30,7 +30,7 @@ public class DbOperationsProduto {
 		return sessionFactoryObj;
 	}
 
-	public static void createRecord(String nome, String quantidade, String preco, String animal) {
+	public static void createRecord(String nome, String quantidade, String preco, int animal) {
 		logger.info("\n\n.......Função de adicionar registro.......\n");
 		Produto704593e706002 produtoObj = new Produto704593e706002();
 		try {
@@ -44,6 +44,7 @@ public class DbOperationsProduto {
 			sessionObj = buildSessionFactory().openSession();
 
 			sessionObj.beginTransaction();
+
 			sessionObj.save(produtoObj);
 
 			sessionObj.getTransaction().commit();
@@ -54,7 +55,7 @@ public class DbOperationsProduto {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
 				sessionObj.getTransaction().rollback();
 			}
-			sqlException.printStackTrace();
+			// sqlException.printStackTrace();
 		} finally {
 			if (sessionObj != null) {
 				sessionObj.close();
@@ -71,13 +72,13 @@ public class DbOperationsProduto {
 
 			sessionObj.beginTransaction();
 
-			produtosList = sessionObj.createQuery("FROM Produto").list();
+			produtosList = sessionObj.createQuery("FROM Produto704593e706002").list();
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
 				sessionObj.getTransaction().rollback();
 			}
-			sqlException.printStackTrace();
+			// sqlException.printStackTrace();
 		} finally {
 			if (sessionObj != null) {
 				sessionObj.close();
@@ -86,17 +87,17 @@ public class DbOperationsProduto {
 		return produtosList;
 	}
 
-	public static void updateRecord(String nome, String novoNome, String quantidade, String preco, String animal) {
+	public static void updateRecord(int id, String novoNome, String quantidade, String preco, String animal) {
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			Produto704593e706002 produtoObj = (Produto704593e706002) sessionObj.get(Produto704593e706002.class, nome);
+			Produto704593e706002 produtoObj = (Produto704593e706002) sessionObj.get(Produto704593e706002.class, id);
 
 			produtoObj.setNome(novoNome);
 			produtoObj.setQuantidadeProduzida(Integer.parseInt(quantidade));
 			produtoObj.setPreco(Float.parseFloat(preco));
-			produtoObj.setAnimal(animal);
+			produtoObj.setAnimal(Integer.parseInt(animal));
 
 			sessionObj.getTransaction().commit();
 
@@ -115,17 +116,17 @@ public class DbOperationsProduto {
 		}
 	}
 
-	public static void deleteRecord(String nome) {
+	public static void deleteRecord(int id) {
 		try {
 
 			sessionObj = buildSessionFactory().openSession();
 
 			sessionObj.beginTransaction();
-			Produto704593e706002 produtoObj = findRecordByName(nome);
+			Produto704593e706002 produtoObj = findRecordByName(id);
 			sessionObj.delete(produtoObj);
 
 			sessionObj.getTransaction().commit();
-			logger.info("\nProduto With Nome?= " + nome + " Is Successfully Deleted From The Database!\n");
+			logger.info("\nProduto With Nome?= " + id + " Is Successfully Deleted From The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -139,7 +140,7 @@ public class DbOperationsProduto {
 		}
 	}
 
-	public static Produto704593e706002 findRecordByName(String name) {
+	public static Produto704593e706002 findRecordByName(int id) {
 		Produto704593e706002 findProdutoObj = null;
 		try {
 
@@ -147,7 +148,7 @@ public class DbOperationsProduto {
 
 			sessionObj.beginTransaction();
 
-			findProdutoObj = (Produto704593e706002) sessionObj.load(Produto704593e706002.class, name);
+			findProdutoObj = (Produto704593e706002) sessionObj.load(Produto704593e706002.class, id);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -165,7 +166,7 @@ public class DbOperationsProduto {
 
 			sessionObj.beginTransaction();
 
-			Query queryObj = sessionObj.createQuery("DELETE FROM Produto");
+			Query queryObj = sessionObj.createQuery("DELETE FROM Produto704593e706002");
 			queryObj.executeUpdate();
 
 			sessionObj.getTransaction().commit();

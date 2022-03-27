@@ -1777,3 +1777,77 @@ Successfully Created Records In The Database!
 2022-03-27 12:19:36 INFO  DbOperationsProduto:77 - 
 .......Transaction Is Being Rolled Back.......
 
+2022-03-27 13:32:05 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:32:06 ERROR SqlExceptionHelper:146 - Unknown column 'animal7045x0_.alimentos_consumidos' in 'field list'
+2022-03-27 13:32:06 INFO  DbOperationsAnimal:70 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:43:49 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:43:49 ERROR SqlExceptionHelper:146 - Unknown column 'animal7045x0_.alimentos_consumidos' in 'field list'
+2022-03-27 13:43:49 INFO  DbOperationsAnimal:70 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:45:37 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:47:31 ERROR SqlExceptionHelper:146 - Unknown column 'produto704x0_.id' in 'field list'
+2022-03-27 13:47:31 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:48:12 ERROR SqlExceptionHelper:146 - Unknown column 'produto704x0_.id' in 'field list'
+2022-03-27 13:48:12 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:48:39 INFO  DbOperationsProduto:34 - 
+
+.......Função de adicionar registro.......
+
+2022-03-27 13:48:39 ERROR SqlExceptionHelper:146 - Unknown column 'id' in 'field list'
+2022-03-27 13:48:39 INFO  DbOperationsProduto:54 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:48:39 ERROR SqlExceptionHelper:146 - Unknown column 'produto704x0_.id' in 'field list'
+2022-03-27 13:48:39 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:53:18 ERROR SqlExceptionHelper:146 - Unknown column 'produto704x0_.id' in 'field list'
+2022-03-27 13:53:18 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:53:30 INFO  DbOperationsProduto:34 - 
+
+.......Função de adicionar registro.......
+
+2022-03-27 13:53:30 ERROR SqlExceptionHelper:146 - Unknown column 'id' in 'field list'
+2022-03-27 13:53:30 INFO  DbOperationsProduto:54 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:53:31 ERROR SqlExceptionHelper:146 - Unknown column 'produto704x0_.id' in 'field list'
+2022-03-27 13:53:31 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 13:57:47 INFO  DbOperationsProduto:34 - 
+
+.......Função de adicionar registro.......
+
+2022-03-27 13:57:48 INFO  DbOperationsProduto:47 - 
+
+Produto Details?= Nome: Leite, Quantidade Produzida: 23, Preço: R$5.0, animal: 1
+2022-03-27 13:57:48 INFO  DbOperationsProduto:52 - 
+Successfully Created '
+2022-03-27 13:57:53 INFO  DbOperationsProduto:154 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 14:49:09 INFO  DbOperationsProduto:108 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 14:52:56 INFO  DbOperationsProduto:104 - 
+Produto With nome?= Leites Is Successfully Updated In The Database!
+
+2022-03-27 14:57:00 INFO  DbOperationsProduto:129 - 
+Produto With Nome?= 1 Is Successfully Deleted From The Database!
+

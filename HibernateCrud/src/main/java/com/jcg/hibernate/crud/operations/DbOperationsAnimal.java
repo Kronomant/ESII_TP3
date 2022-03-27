@@ -37,8 +37,8 @@ public class DbOperationsAnimal {
 			System.out.println(nomeDigitado + quantidadeDigitada);
 			AnimalObj = new Animal704593e706002();
 			AnimalObj.setQuantidade(Integer.parseInt(quantidadeDigitada));
-			AnimalObj.setProdutosDerivados("");
-			AnimalObj.setAlimentosConsumidos(1);
+			// AnimalObj.setProdutosDerivados("");
+			// AnimalObj.setAlimentosConsumidos(1);
 			AnimalObj.setNome(nomeDigitado);
 			sessionObj.save(AnimalObj);
 
@@ -87,8 +87,8 @@ public class DbOperationsAnimal {
 					id);
 			AnimalObj.setNome(novoNome);
 			AnimalObj.setQuantidade(Integer.parseInt(novaQuantidade));
-			AnimalObj.setProdutosDerivados("");
-			AnimalObj.setAlimentosConsumidos(1);
+			// AnimalObj.setProdutosDerivados("");
+			// AnimalObj.setAlimentosConsumidos(1);
 			sessionObj.getTransaction().commit();
 			logger.info("\nAnimal With Id?= " + id + " Is Successfully Updated In The Database!\n");
 		} catch (Exception sqlException) {
