@@ -137,7 +137,6 @@ public class TelaAlimento extends JFrame implements ActionListener {
                 campo.setText(null);
             }
         }
-
     }
 
     public void actionPerformed(ActionEvent e) {

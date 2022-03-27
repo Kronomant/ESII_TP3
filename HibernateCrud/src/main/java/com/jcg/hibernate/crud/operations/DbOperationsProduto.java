@@ -32,7 +32,7 @@ public class DbOperationsProduto {
 
 	public static void createRecord(String nome, String quantidade, String preco, String animal) {
 		logger.info("\n\n.......Função de adicionar registro.......\n");
-		Produto produtoObj = new Produto();
+		Produto704593e706002 produtoObj = new Produto704593e706002();
 		try {
 
 			// Seta objeto com dados recebidos da tela
@@ -63,8 +63,8 @@ public class DbOperationsProduto {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static List<Produto> displayRecords() {
-		List<Produto> produtosList = new ArrayList<Produto>();
+	public static List<Produto704593e706002> displayRecords() {
+		List<Produto704593e706002> produtosList = new ArrayList<Produto704593e706002>();
 		try {
 
 			sessionObj = buildSessionFactory().openSession();
@@ -91,7 +91,7 @@ public class DbOperationsProduto {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			Produto produtoObj = (Produto) sessionObj.get(Produto.class, nome);
+			Produto704593e706002 produtoObj = (Produto704593e706002) sessionObj.get(Produto704593e706002.class, nome);
 
 			produtoObj.setNome(novoNome);
 			produtoObj.setQuantidadeProduzida(Integer.parseInt(quantidade));
@@ -121,7 +121,7 @@ public class DbOperationsProduto {
 			sessionObj = buildSessionFactory().openSession();
 
 			sessionObj.beginTransaction();
-			Produto produtoObj = findRecordByName(nome);
+			Produto704593e706002 produtoObj = findRecordByName(nome);
 			sessionObj.delete(produtoObj);
 
 			sessionObj.getTransaction().commit();
@@ -139,15 +139,15 @@ public class DbOperationsProduto {
 		}
 	}
 
-	public static Produto findRecordByName(String name) {
-		Produto findProdutoObj = null;
+	public static Produto704593e706002 findRecordByName(String name) {
+		Produto704593e706002 findProdutoObj = null;
 		try {
 
 			sessionObj = buildSessionFactory().openSession();
 
 			sessionObj.beginTransaction();
 
-			findProdutoObj = (Produto) sessionObj.load(Produto.class, name);
+			findProdutoObj = (Produto704593e706002) sessionObj.load(Produto704593e706002.class, name);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");

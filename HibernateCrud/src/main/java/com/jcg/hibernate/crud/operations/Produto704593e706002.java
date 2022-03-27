@@ -11,11 +11,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Produto")
-public class Produto implements Serializable {
+public class Produto704593e706002 implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "id")
+	private int id;
+
 	@Column(name = "nome")
 	private String nome;
 
@@ -27,6 +30,14 @@ public class Produto implements Serializable {
 
 	@Column(name = "animal")
 	private String animal;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;

@@ -1317,3 +1317,33 @@ leita
 2022-03-20 20:09:55 INFO  DbOperationsProduto:108 - 
 .......Transaction Is Being Rolled Back.......
 
+2022-03-20 20:27:32 INFO  DbOperationsProduto:107 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:39:18 INFO  DbOperationsProduto:107 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-20 20:40:01 INFO  DbOperationsAlimento:92 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-26 14:19:43 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-26 14:20:13 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 10:34:04 INFO  DbOperationsProduto:77 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 10:34:04 ERROR SqlExceptionHelper:146 - Table 'es2.Alimento704593e706002' doesn't exist
+2022-03-27 10:34:04 INFO  DbOperationsAlimento:68 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 10:34:07 ERROR SqlExceptionHelper:146 - Table 'es2.Animal704593e706002' doesn't exist
+2022-03-27 10:34:07 INFO  DbOperationsAnimal:70 - 
+.......Transaction Is Being Rolled Back.......
+
+2022-03-27 10:34:07 ERROR SqlExceptionHelper:146 - Table 'es2.Alimento704593e706002' doesn't exist
+2022-03-27 10:34:07 INFO  DbOperationsAlimento:68 - 
+.......Transaction Is Being Rolled Back.......
+

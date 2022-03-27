@@ -20,6 +20,7 @@ public class TelaProduto extends JFrame implements ActionListener {
     private JTextField txtAnimal;
 
     private JComboBox cbPesquisar;
+    private JComboBox cbAnimal;
     private ButtonGroup bt = new ButtonGroup();
 
     private JButton btnSalvar;
@@ -38,61 +39,76 @@ public class TelaProduto extends JFrame implements ActionListener {
         contentPane.setLayout(null);
 
         // Labels
+
+        // Label de Pesquisa
         JLabel lblPesquisar = new JLabel("Pesquisar:");
         lblPesquisar.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblPesquisar.setBounds(10, 31, 109, 14);
         contentPane.add(lblPesquisar);
 
+        // Label campo Nome
         JLabel lblNome = new JLabel("Nome:");
         lblNome.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblNome.setBounds(10, 79, 109, 14);
         contentPane.add(lblNome);
 
+        // Label quantidade
         JLabel lblQtde = new JLabel("Quantidade produzida:");
         lblQtde.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblQtde.setBounds(10, 104, 169, 14);
         contentPane.add(lblQtde);
 
+        // Label Preço
         JLabel lblPreco = new JLabel("Preco:");
         lblPreco.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblPreco.setBounds(10, 124, 109, 14);
         contentPane.add(lblPreco);
 
+        // Label Animal
         JLabel lblAnimal = new JLabel("Animal:");
         lblAnimal.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         lblAnimal.setBounds(10, 150, 109, 14);
         contentPane.add(lblAnimal);
 
-        // Campos
+        // Select de Pesquisa
         cbPesquisar = new JComboBox();
         cbPesquisar.setEditable(true);
         cbPesquisar.setBounds(129, 28, 283, 20);
-
         contentPane.add(cbPesquisar);
 
+        // Input Nome
         txtNome = new JTextField();
         txtNome.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         txtNome.setBounds(129, 76, 283, 20);
         contentPane.add(txtNome);
         txtNome.setColumns(10);
 
+        // Input Quantidade
         txtQtde = new JTextField();
         txtQtde.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         txtQtde.setBounds(180, 101, 283, 20);
         contentPane.add(txtQtde);
         txtQtde.setColumns(10);
 
+        // Input Preco
         txtPreco = new JTextField();
         txtPreco.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
         txtPreco.setBounds(129, 124, 283, 20);
         contentPane.add(txtPreco);
         txtPreco.setColumns(10);
 
-        txtAnimal = new JTextField();
-        txtAnimal.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
-        txtAnimal.setBounds(129, 150, 283, 20);
-        contentPane.add(txtAnimal);
-        txtAnimal.setColumns(10);
+        // Input Animal
+        // txtAnimal = new JTextField();
+        // txtAnimal.setFont(new Font("Franklin Gothic Book", Font.BOLD, 12));
+        // txtAnimal.setBounds(129, 150, 283, 20);
+        // contentPane.add(txtAnimal);
+        // txtAnimal.setColumns(10);
+
+        // Select Animal
+        cbAnimal = new JComboBox();
+        cbAnimal.setEditable(true);
+        cbAnimal.setBounds(129, 150, 283, 20);
+        contentPane.add(cbAnimal);
 
         // Botões
 
@@ -132,21 +148,29 @@ public class TelaProduto extends JFrame implements ActionListener {
     }
 
     public void carregaLista() {
-        List<Produto> ProdutoBd = DbOperationsProduto.displayRecords();
+        // Carrega lista de produtos
+        List<Produto704593e706002> ProdutoBd = DbOperationsProduto.displayRecords();
         cbPesquisar.removeAllItems();
-        for (Produto produto : ProdutoBd) {
+        // Adiciona lista de produto no select
+        for (Produto704593e706002 produto : ProdutoBd) {
             cbPesquisar.addItem(produto.getNome());
+        }
+
+        List<Animal704593e706002> AnimalBD = DbOperationsAnimal.displayRecords();
+        cbAnimal.removeAllItems();
+        for (Animal704593e706002 animal : AnimalBD) {
+            cbAnimal.addItem(animal);
         }
     }
 
-    public Produto montaProduto() {
-        Produto c = new Produto();
+    public Produto704593e706002 montaProduto() {
+        Produto704593e706002 c = new Produto704593e706002();
         c.setNome(this.txtNome.getText());
         c.setPreco(Float.parseFloat(this.txtPreco.getText()));
         return c;
     }
 
-    public void carregaProdutonaTela(Produto c2) {
+    public void carregaProdutonaTela(Produto704593e706002 c2) {
         this.txtNome.setText(c2.getNome());
         this.txtPreco.setText(Float.toString(c2.getPreco()));
         this.txtQtde.setText(Integer.toString(c2.getQuantidadeProduzida()));
@@ -175,7 +199,7 @@ public class TelaProduto extends JFrame implements ActionListener {
         } else if (e.getActionCommand().equals(this.btnPesquisar.getActionCommand())) {
 
             String nomeDigitado = cbPesquisar.getSelectedItem().toString();
-            Produto produto = DbOperationsProduto.findRecordByName(nomeDigitado);
+            Produto704593e706002 produto = DbOperationsProduto.findRecordByName(nomeDigitado);
             if (produto.getNome() == nomeDigitado) {
 
                 this.carregaProdutonaTela(produto);
@@ -187,7 +211,7 @@ public class TelaProduto extends JFrame implements ActionListener {
             this.limpaTela();
         } else if (e.getActionCommand().equals(this.btnExcluir.getActionCommand())) {
             String nomeDigitado = cbPesquisar.getSelectedItem().toString();
-            Produto cbusca = DbOperationsProduto.findRecordByName(nomeDigitado);
+            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(nomeDigitado);
 
             if (cbusca == null)
                 JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
@@ -200,8 +224,8 @@ public class TelaProduto extends JFrame implements ActionListener {
             }
         }
         if (e.getActionCommand().equals(this.btnEditar.getActionCommand())) {
-            String nomeAntigo = cbPesquisar.getSelectedItem().toString();
-            Produto cbusca = DbOperationsProduto.findRecordByName(nomeAntigo);
+            String nomeAntigo = cbPesquisar.getSelectedItem().toString().trim();
+            Produto704593e706002 cbusca = DbOperationsProduto.findRecordByName(nomeAntigo);
             if (cbusca == null)
                 JOptionPane.showMessageDialog(null, "Produto nao cadastrado...");
             else {
