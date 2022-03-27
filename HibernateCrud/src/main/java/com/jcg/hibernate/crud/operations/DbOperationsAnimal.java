@@ -79,18 +79,18 @@ public class DbOperationsAnimal {
 		return AnimalsList;
 	}
 
-	public static void updateRecord(String nomeDigitado, String novoNome, String novaQuantidade) {
+	public static void updateRecord(int id, String novoNome, String novaQuantidade) {
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 			Animal704593e706002 AnimalObj = (Animal704593e706002) sessionObj.get(Animal704593e706002.class,
-					nomeDigitado);
+					id);
 			AnimalObj.setNome(novoNome);
 			AnimalObj.setQuantidade(Integer.parseInt(novaQuantidade));
 			AnimalObj.setProdutosDerivados("");
 			AnimalObj.setAlimentosConsumidos(1);
 			sessionObj.getTransaction().commit();
-			logger.info("\nAnimal With Nome?= " + nomeDigitado + " Is Successfully Updated In The Database!\n");
+			logger.info("\nAnimal With Id?= " + id + " Is Successfully Updated In The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -104,15 +104,15 @@ public class DbOperationsAnimal {
 		}
 	}
 
-	public static void deleteRecord(String nome) {
+	public static void deleteRecord(int id) {
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			Animal704593e706002 AnimalObj = findRecordByName(nome);
+			Animal704593e706002 AnimalObj = findRecordByName(id);
 			sessionObj.delete(AnimalObj);
 			sessionObj.getTransaction().commit();
-			logger.info("\nAnimal With Nome?= " + nome + " Is Successfully Deleted From The Database!\n");
+			logger.info("\nAnimal With Id?= " + id + " Is Successfully Deleted From The Database!\n");
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
@@ -126,13 +126,13 @@ public class DbOperationsAnimal {
 		}
 	}
 
-	public static Animal704593e706002 findRecordByName(String nome) {
+	public static Animal704593e706002 findRecordByName(int id) {
 		Animal704593e706002 findAnimalObj = null;
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			findAnimalObj = (Animal704593e706002) sessionObj.load(Animal704593e706002.class, nome);
+			findAnimalObj = (Animal704593e706002) sessionObj.load(Animal704593e706002.class, id);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
