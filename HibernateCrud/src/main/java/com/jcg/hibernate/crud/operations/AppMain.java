@@ -5,15 +5,15 @@ public class AppMain {
     public static void main(String args[]) {
 
         TelaProduto TC = new TelaProduto();
-        TC.setVisible(true);
+        TC.setVisible(false);
 
         TelaAlimento telaAlimento = new TelaAlimento();
         telaAlimento.setVisible(false);
 
         TelaAnimal telaAnimal = new TelaAnimal();
-        telaAnimal.setVisible(false);
+        telaAnimal.setVisible(true);
         TelaMenu telaMenu = new TelaMenu();
-        telaMenu.setVisible(true);
+        telaMenu.setVisible(false);
 
     }
 }

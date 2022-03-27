@@ -100,35 +100,36 @@ public class DbOperationsAlimento {
 		}
 	}
 
-	public static void deleteRecord(int id) {
-		try {
-			sessionObj = buildSessionFactory().openSession();
-			sessionObj.beginTransaction();
+	// public static void deleteRecord(int id) {
+	// try {
+	// sessionObj = buildSessionFactory().openSession();
+	// sessionObj.beginTransaction();
 
-			Alimento704593e706002 alimentoObj = findRecordByName(id);
-			sessionObj.delete(alimentoObj);
-			sessionObj.getTransaction().commit();
-			logger.info("\nAlimento With Id?= " + id + " Is Successfully Deleted From The Database!\n");
-		} catch (Exception sqlException) {
-			if (null != sessionObj.getTransaction()) {
-				logger.info("\n.......Transaction Is Being Rolled Back.......\n");
-				sessionObj.getTransaction().rollback();
-			}
-			sqlException.printStackTrace();
-		} finally {
-			if (sessionObj != null) {
-				sessionObj.close();
-			}
-		}
-	}
+	// Alimento704593e706002 alimentoObj = findRecordByName(id);
+	// sessionObj.delete(alimentoObj);
+	// sessionObj.getTransaction().commit();
+	// logger.info("\nAlimento With Id?= " + id + " Is Successfully Deleted From The
+	// Database!\n");
+	// } catch (Exception sqlException) {
+	// if (null != sessionObj.getTransaction()) {
+	// logger.info("\n.......Transaction Is Being Rolled Back.......\n");
+	// sessionObj.getTransaction().rollback();
+	// }
+	// sqlException.printStackTrace();
+	// } finally {
+	// if (sessionObj != null) {
+	// sessionObj.close();
+	// }
+	// }
+	// }
 
-	public static Alimento704593e706002 findRecordByName(int id) {
+	public static Alimento704593e706002 findRecordByName(String name) {
 		Alimento704593e706002 findAlimentoObj = null;
 		try {
 			sessionObj = buildSessionFactory().openSession();
 			sessionObj.beginTransaction();
 
-			findAlimentoObj = (Alimento704593e706002) sessionObj.load(Alimento704593e706002.class, id);
+			findAlimentoObj = (Alimento704593e706002) sessionObj.load(Alimento704593e706002.class, name);
 		} catch (Exception sqlException) {
 			if (null != sessionObj.getTransaction()) {
 				logger.info("\n.......Transaction Is Being Rolled Back.......\n");

@@ -51,6 +51,10 @@ public class Alimento704593e706002 implements Serializable {
 
 	@Override
 	public String toString() {
+		return this.Nome;
+	}
+
+	public String imprimir() {
 		return "Alimento Details?= Id: " + this.id + ", nome: " + this.Nome + ", preco: " + this.preco;
 	}
 }

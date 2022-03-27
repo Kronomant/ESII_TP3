@@ -129,9 +129,9 @@ public class TelaAnimal extends JFrame implements ActionListener {
     }
 
     public void carregaListaProduto() {
-        List<Produto> ProdutoBd = DbOperationsProduto.displayRecords();
+        List<Produto704593e706002> ProdutoBd = DbOperationsProduto.displayRecords();
         cbProdutos.removeAllItems();
-        for (Produto produto : ProdutoBd) {
+        for (Produto704593e706002 produto : ProdutoBd) {
             cbProdutos.addItem(produto.getId());
         }
     }

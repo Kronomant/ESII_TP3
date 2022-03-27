@@ -54,19 +54,20 @@ public class TelaMenu extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
+        TelaAlimento telaAlimento = new TelaAlimento();
+        TelaAnimal telaAnimal = new TelaAnimal();
+        TelaProduto telaProduto = new TelaProduto();
+
         if (e.getActionCommand().equals(this.btnAlimentos.getActionCommand())) {
 
-            TelaAlimento telaAlimento = new TelaAlimento();
             telaAlimento.setVisible(true);
 
         } else if (e.getActionCommand().equals(this.btnAnimais.getActionCommand())) {
 
-            TelaAnimal telaAnimal = new TelaAnimal();
             telaAnimal.setVisible(true);
 
         } else if (e.getActionCommand().equals(this.btnProdutos.getActionCommand())) {
 
-            TelaProduto telaProduto = new TelaProduto();
             telaProduto.setVisible(true);
 
         }
