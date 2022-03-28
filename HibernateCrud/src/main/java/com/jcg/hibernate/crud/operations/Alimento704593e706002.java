@@ -51,7 +51,7 @@ public class Alimento704593e706002 implements Serializable {
 
 	@Override
 	public String toString() {
-		return this.Nome;
+		return this.id + "-" + this.Nome;
 	}
 
 	public String imprimir() {

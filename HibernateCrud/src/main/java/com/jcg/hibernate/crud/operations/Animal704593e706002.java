@@ -26,12 +26,6 @@ public class Animal704593e706002 implements Serializable {
 	@Column(name = "quantidade")
 	private int quantidade;
 
-	// @Column(name = "alimentos_consumidos")
-	// private int alimentos_consumidos;
-
-	// @Column(name = "produtos_derivados")
-	// private String produtos_derivados;
-
 	public int getId() {
 		return id;
 	}
@@ -55,22 +49,6 @@ public class Animal704593e706002 implements Serializable {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-
-	// public String getProdutosDerivados() {
-	// return produtos_derivados;
-	// }
-
-	// public void setProdutosDerivados(String produtos_derivados) {
-	// this.produtos_derivados = produtos_derivados;
-	// }
-
-	// public int getAlimentosConsumidos() {
-	// return alimentos_consumidos;
-	// }
-
-	// public void setAlimentosConsumidos(int alimentos_consumidos) {
-	// this.alimentos_consumidos = alimentos_consumidos;
-	// }
 
 	@Override
 	public String toString() {
