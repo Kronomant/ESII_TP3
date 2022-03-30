@@ -119,11 +119,11 @@ public class TelaAnimal extends JFrame implements ActionListener {
         btnExcluir.setActionCommand("excluir");
         contentPane.add(btnExcluir);
 
-        btnPesquisar = new JButton("Alimentos Consumidos");
-        btnPesquisar.setBounds(480, 180, 200, 23);
-        btnPesquisar.addActionListener(this);
-        btnPesquisar.setActionCommand("consumoAlimentos");
-        contentPane.add(btnPesquisar);
+        btnConsumoAlimentos = new JButton("Alimentos Consumidos");
+        btnConsumoAlimentos.setBounds(480, 180, 200, 23);
+        btnConsumoAlimentos.addActionListener(this);
+        btnConsumoAlimentos.setActionCommand("consumoAlimentos");
+        contentPane.add(btnConsumoAlimentos);
 
         btnPesquisar = new JButton("Buscar");
         btnPesquisar.setBounds(450, 30, 95, 23);
@@ -205,7 +205,8 @@ public class TelaAnimal extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Animal nao cadastrado...");
 
             }
-        } else if (e.getActionCommand().equals(this.btnConsumoAlimentos.getActionCommand())) {
+        }
+        if (e.getActionCommand().equals(this.btnConsumoAlimentos.getActionCommand())) {
             String[] animalDigitado = cbPesquisar.getSelectedItem().toString().split("-");
             Animal704593e706002 cbusca = DbOperationsAnimal.findRecordById(Integer.parseInt(animalDigitado[0]));
             if (cbusca == null)

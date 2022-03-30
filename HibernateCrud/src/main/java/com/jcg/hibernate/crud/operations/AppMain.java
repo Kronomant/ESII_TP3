@@ -11,9 +11,9 @@ public class AppMain {
         telaAlimento.setVisible(false);
 
         TelaAnimal telaAnimal = new TelaAnimal();
-        telaAnimal.setVisible(true);
+        telaAnimal.setVisible(false);
         TelaMenu telaMenu = new TelaMenu();
-        telaMenu.setVisible(false);
+        telaMenu.setVisible(true);
 
     }
 }

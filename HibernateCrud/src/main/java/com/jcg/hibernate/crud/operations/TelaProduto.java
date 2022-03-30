@@ -166,7 +166,8 @@ public class TelaProduto extends JFrame implements ActionListener {
         this.txtNome.setText(c2.getNome());
         this.txtPreco.setText(Float.toString(c2.getPreco()));
         this.txtQtde.setText(Integer.toString(c2.getQuantidadeProduzida()));
-        // cbAnimal.setSelectedItem();
+        List<Animal704593e706002> AnimalBD = DbOperationsAnimal.displayRecords();
+        this.cbAnimal.setSelectedItem(AnimalBD.get(c2.getAnimal() - 1).toString());
     }
 
     public void limpaTela() {
